@@ -1,0 +1,703 @@
+
+
+.profil {
+    margin: auto;
+    display: flex;
+    margin-top: 8rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profil .lisan {
+    width: 50%;
+    margin: 5rem 0rem;
+}
+
+.lisan h1 {
+    font-size: 3.5rem;
+    padding-right: 10rem;
+    font-weight: 800;
+    line-height: 120%;
+}
+
+.lisan h1 span {
+    font-size: 56px;
+    padding-right: 10rem;
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.lisan h6 span {
+    color: #495057;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.lisan h6 {
+    margin-top: 32px;
+    font-weight: 100;
+    color: #495057;
+    font-size: 20px;
+    padding-right: 10rem;
+}
+
+
+.profil .gambar {
+    width: 50%;
+    display: contents;
+}
+
+.gambar img {
+    background: content-box radial-gradient(48.59% 48.45% at 49.07% 49.07%, rgba(4, 194, 109, 0.32) 0%, rgba(58, 224, 83, 0) 92.48%);
+}
+
+.visi-misi {
+    display: flex;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.visi-misi .visi {
+    width: 50%;
+}
+
+.visi h1,
+.misi h1 {
+    color: var(--primary);
+    font-size: 2.875rem;
+    margin-top: 1.5rem;
+}
+
+.visi h6 {
+    color: #495057;
+    font-size: 24px;
+    font-weight: 200;
+    padding-right: 11rem;
+    margin-top: 1rem;
+    letter-spacing: 0.25%;
+}
+
+.visi-misi .misi {
+    width: 50%;
+}
+
+
+.misi h6 {
+    color: #495057;
+    font-size: 24px;
+    font-weight: 200;
+    padding-right: 9.5rem;
+    margin-top: 1rem;
+    letter-spacing: 0.25%;
+}
+
+.struktur {
+    background-image: url(../images/bg.png);
+    margin-top: 6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+
+.struktur .keterangan {
+    color: #F5F5F5;
+    text-align: center;
+    font-size: 46px;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2.5rem 4.6rem;
+    transition: 0.3s;
+    margin: 0.5rem;
+    background-color: var(--secondary);
+    border-radius: 12px;
+    height: 300px;
+    margin-top: 18.6rem;
+    margin-bottom: 5rem;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-radius: 208px;
+    border: 10px solid #2dac5d;
+}
+
+.card .container {
+    padding: 1rem;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+.card .container h4 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.card .container p {
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.produk-desa {
+    margin: auto;
+}
+
+.konten {
+    display: flex;
+    align-items: flex-end;
+}
+
+.kontenkanan {
+    /* margin-top: 5rem; */
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.kontenkanan .pangan,
+.kontenkanan .wisata {
+    width: 249px;
+    height: 184px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--secondary);
+    border-radius: 10px;
+    padding: 24px 46px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.kontenkanan .pangan p,
+.kontenkanan .wisata p {
+    font-weight: 600;
+    font-size: 20px;
+    color: #F5F5F5;
+}
+
+.kontenkanan .pangan img,
+.kontenkanan .wisata img {
+    width: 80px;
+}
+
+.kontenkiri {
+    /* margin-top: 2rem; */
+    width: 50%;
+    /* margin: auto; */
+}
+
+.produk-desa h1 {
+    margin-top: 5rem;
+    color: var(--primary);
+    font-size: 2.8rem;
+}
+
+.kontenkiri p {
+    margin-top: 1rem;
+    color: #495057;
+    padding-right: 11rem;
+    font-size: 24px;
+}
+
+.kontenkiri p span {
+    color: #495057;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.infografis {
+    display: flex;
+    margin: auto;
+    margin-top: 6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infografis .info-tengah {
+    display: flex;
+    width: 25rem;
+    height: 25rem;
+    align-items: center;
+    background: var(--primary);
+    box-shadow: inset -2px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.info-kiri p,
+.info-kanan p {
+    font-size: 1.5rem;
+    color: #495057;
+    background-color: #DDDDDD;
+    border-radius: 45px;
+}
+
+.subinfokiri,
+.subinfokanan {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.subinfokanan {
+    align-items: end;
+}
+
+.subinfokiri {
+    align-items: start;
+}
+
+.item {
+    display: flex;
+    background-color: #DDDDDD;
+    align-items: center;
+    border-radius: 45px;
+}
+
+.info-kiri i,
+.info-kanan i {
+    font-size: 35px;
+    color: var(--white);
+    background-color: var(--secondary);
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+
+.info-kiri p {
+    padding: 1.2rem 5rem 1.2rem 2rem;
+}
+
+.info-kiri .atas {
+    padding: 1.2rem 5.5rem 1.2rem 2rem;
+}
+
+.info-kiri .bawah {
+    padding: 1.2rem 2rem 1.2rem 2rem;
+}
+
+.info-kanan p {
+    padding: 1.2rem 2rem 1.2rem 5rem;
+}
+
+.info-kanan .atas {
+    padding: 1.2rem 2rem 1.2rem 2rem;
+}
+
+.info-kanan .bawah {
+    padding: 1.2rem 2rem 1.2rem 5.5rem;
+}
+
+.info-tengah p {
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: #F5F5F5;
+}
+
+.berita {
+    display: flex;
+    margin: auto;
+    margin-top: 8rem;
+    flex-direction: column;
+}
+
+.berita-berita {
+    margin: auto;
+    text-align: center;
+}
+
+.berita-berita {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.berita h1 {
+    font-weight: 600;
+    font-size: 56px;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.berita-berita .berita-utama {
+    width: 50%;
+}
+
+.berita-utama img {
+    width: 100%;
+}
+
+.berita-berita .sub-berita {
+    width: 50%;
+}
+
+.berita-berita .info-berita {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem 0;
+    gap: 1rem;
+    align-items: center;
+}
+
+.info-berita .judul {
+    background-color: var(--secondary);
+    padding: 0.6rem 2.5rem;
+    color: #F5F5F5;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.info-berita i {
+    color: #727272;
+    font-size: 1.2rem;
+}
+
+.info-berita p {
+    color: #727272;
+    font-size: 0.75rem;
+}
+
+.deskripsi-berita h1 {
+    font-size: 1.4rem;
+    color: #141414;
+    margin: 1rem 0 0.2rem 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+.deskripsi-berita p {
+    font-size: 1.2rem;
+    color: #495057;
+    margin: 0;
+    text-align: justify;
+}
+
+.deskripsi-berita .bc {
+    font-size: 1.2rem;
+    color: var(--secondary);
+    margin: 0.5rem 0;
+    text-decoration-line: underline;
+    text-align: justify;
+    cursor: pointer;
+}
+
+.sub-berita {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.sub-berita .britae {
+    width: 48%;
+}
+
+
+.britae img {
+    width: 100%;
+    display: block;
+}
+
+.britae .judul {
+    background-color: var(--secondary);
+    padding: 0.5rem 2rem;
+    color: #F5F5F5;
+    font-size: 1rem;
+}
+
+.sub-berita .ls {
+    font-size: 1.2rem;
+    color: var(--secondary);
+    margin: 0.5rem 0;
+    text-decoration-line: underline;
+    text-align: justify;
+    cursor: pointer;
+}
+
+.footer {
+    background-image: url(../images/Footer.png);
+    margin-top: 8rem;
+    width: 100%;
+    height: 35rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.footer .kesimpulan {
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kesimpulan h1 {
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+.kesimpulan p {
+    margin-top: 0.5rem;
+    color: #DDDDDD;
+    font-size: 1.5rem;
+}
+
+.kesimpulan span {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.footer .kontak {
+    position: absolute;
+    display: flex;
+    gap: 0.5rem;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    color: #F5F5F5;
+    background-color: var(--secondary);
+    justify-content: center;
+    width: 15%;
+    padding: 0.8rem 0;
+    border-radius: 12px;
+}
+
+.footer hr {
+    position: absolute;
+    width: 85%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 85%;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F5F5F5;
+}
+
+.footer .copyright .log {
+    background-color: var(--secondary);
+    padding: 1rem 2rem;
+    font-weight: 700;
+}
+
+.footer .copyright .servis {
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+/* mediaonli */
+.profil {
+    flex-direction: column-reverse;
+    width: 80%;
+}
+
+.profil .gambar,
+.profil .lisan {
+    width: 100%;
+}
+
+.profil .gambar img {
+    width: 100%;
+}
+
+.lisan h1,
+.lisan h1 span {
+    margin-top: -3rem;
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 0;
+}
+
+.lisan h6 {
+    padding: 0;
+    text-align: center;
+}
+
+.visi-misi {
+    flex-direction: column;
+}
+
+.visi-misi .visi,
+.visi-misi .misi {
+    width: 100%;
+}
+
+.misi {
+    margin-top: 3rem;
+}
+
+.visi h6,
+.misi h6 {
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.struktur .keterangan {
+    top: 14%;
+    font-size: 2.2rem;
+}
+
+.cards {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: start;
+}
+
+.card {
+    padding: 1.5rem 2rem;
+}
+
+.produk-desa .konten {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.produk-desa h1 {
+    text-align: center;
+}
+
+.kontenkiri {
+    width: 100%;
+}
+
+.kontenkiri p,
+.kontenkiri p span {
+    padding-right: 0;
+    font-size: 1.2rem;
+}
+
+.kontenkanan .pangan,
+.kontenkanan .wisata {
+    padding: 1rem 2rem;
+}
+
+.kontenkiri p {
+    padding-right: 0;
+}
+
+.kontenkanan {
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.infografis {
+    flex-direction: column;
+}
+
+.infografis .info-tengah {
+    order: 1;
+    width: 20rem;
+    height: 20rem;
+    justify-content: center;
+}
+
+.info-tengah p {
+    display: inline-block;
+    font-size: 2.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.infografis .info-kiri {
+    order: 3;
+    margin-top: 3rem;
+}
+
+.infografis .info-kanan {
+    order: 2;
+    margin-top: 2rem;
+}
+
+.info-kiri p,
+.info-kanan p {
+    font-size: 1.2rem;
+}
+
+.berita-berita {
+    flex-wrap: wrap;
+}
+
+.berita-berita .berita-utama {
+    width: 100%;
+}
+
+.info-berita .judul {
+    padding: 0.6rem 1.8rem;
+}
+
+.berita-berita .sub-berita,
+.sub-berita .britae {
+    width: 100%;
+}
+
+.footer .kesimpulan {
+    top: 28%;
+    width: 85%;
+}
+
+.footer .kesimpulan h1 {
+    font-size: 1.5rem;
+}
+
+.footer .kesimpulan p {
+    font-size: 1rem;
+}
+
+.footer .kontak {
+    width: 65%;
+    top: 53%;
+}
+
+.footer hr {
+    top: 63%;
+}
+
+.footer .copyright {
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 78%;
+}
+
+.footer .copyright .log,
+.footer .copyright .servis {
+    margin-top: 1rem;
+}
