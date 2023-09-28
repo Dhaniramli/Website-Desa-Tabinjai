@@ -35,6 +35,7 @@ class VissionMissionController extends Controller
 
         return redirect('/admin/visi-misi')->with('success', 'Berhasil disimpan!');
     }
+    
     public function storeMission(Request $request) {
         $validatedData = $request->validate([
             'id' => 'required',

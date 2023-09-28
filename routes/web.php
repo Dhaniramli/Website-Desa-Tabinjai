@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\HistoryController;
 use App\Http\Controllers\Admin\VissionMissionController;
 use Illuminate\Support\Facades\Route;
 
@@ -43,3 +44,7 @@ Route::put('/admin/berita/update/{slug}', [BlogController::class, 'update']);
 Route::get('/admin/berita/hapus/{slug}', [BlogController::class, 'destroy']);
 Route::get('/admin/berita/show/{slug}', [BlogController::class, 'show']);
 Route::get('/admin/berita/checkSlug', [BlogController::class, 'checkSlug']);
+
+Route::get('/admin/sejarah', [HistoryController::class, 'index']);
+Route::post('/admin/history/create', [HistoryController::class, 'store']);
+Route::put('/admin/history/update', [HistoryController::class, 'update']);

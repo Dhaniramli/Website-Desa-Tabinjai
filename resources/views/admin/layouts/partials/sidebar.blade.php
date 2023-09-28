@@ -30,6 +30,12 @@
             <span>Berita</span></a>
     </li>
 
+    <li class="nav-item {{ Request::is('admin/sejarah*') ? 'active' : '' }}">
+        <a class="nav-link" href="/admin/sejarah">
+            <i class="fa fa-history"></i>
+            <span>Sejarah</span></a>
+    </li>
+
     <li class="nav-item {{ Request::is('admin/visi*') || Request::is('admin/misi*') ? 'active' : '' }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
             aria-expanded="true" aria-controls="collapseOne">
