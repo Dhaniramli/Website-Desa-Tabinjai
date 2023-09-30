@@ -105,6 +105,6 @@ class AdministrativeOfficialsController extends Controller
         }
         AdministrativeOfficials::destroy($id);
 
-        return redirect('/admin/pejabat-administrasi')->with('success', 'Berhasil dihapus!');
+        return redirect('/admin/pejabat-administrasi');
     }
 }

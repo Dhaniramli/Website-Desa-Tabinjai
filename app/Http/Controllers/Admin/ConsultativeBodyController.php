@@ -105,6 +105,6 @@ class ConsultativeBodyController extends Controller
         }
         ConsultativeBody::destroy($id);
 
-        return redirect('/admin/badan-permusyawaratan')->with('success', 'Berhasil dihapus!');
+        return redirect('/admin/badan-permusyawaratan');
     }
 }

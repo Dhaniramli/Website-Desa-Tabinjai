@@ -68,7 +68,7 @@
             var link = $(this).attr("href");
 
             Swal.fire({
-                title: 'Apakah kamu yakin?',
+                title: 'Apakah anda yakin?',
                 text: "Anda tidak akan dapat mengembalikannya!",
                 icon: 'warning',
                 showCancelButton: true,

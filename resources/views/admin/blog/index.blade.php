@@ -5,9 +5,7 @@
 
     <h1 class="h3 mb-2 text-gray-800 text-center">Berita</h1>
     @if (session()->has('success'))
-    <div class="alert alert-success" role="alert">
-        {{ session('success') }}
-    </div>
+    @include('admin.layouts.partials.alertSuccess')
     @endif
 
     <div class="card shadow mb-4">
@@ -39,7 +37,7 @@
                             <td class="align-middle text-center">
                                 <a href="/admin/berita/show/{{ $item->slug }}" class="btn btn-success">Lihat</a>
                                 <a href="/admin/berita/edit/{{ $item->slug }}" class="btn btn-warning">Edit</a>
-                                <a href="/admin/berita/hapus/{{ $item->slug }}" class="btn btn-danger">Hapus</a>
+                                <a id="deleteButton" href="/admin/berita/hapus/{{ $item->slug }}" class="btn btn-danger">Hapus</a>
                             </td>
                         </tr>
                         @endforeach
@@ -51,3 +49,5 @@
 
 </div>
 @endsection
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -103,7 +103,7 @@ class BlogController extends Controller
         }
         Blog::destroy($item->id);
 
-        return redirect('/admin/berita')->with('success', 'Berita berhasil dihapus!');
+        return redirect('/admin/berita');
     }
 
     public function checkSlug(Request $request)

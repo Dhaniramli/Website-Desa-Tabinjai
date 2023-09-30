@@ -5,10 +5,7 @@
     <h1 class="h3 mb-2 text-gray-800 text-center">Sejarah</h1>
 
     @if (session()->has('success'))
-    {{-- @include('admin.layouts.partials.alertSuccess') --}}    
-    <div class="alert alert-success d-flex justify-content-center" role="alert" style="width: 200px;">
-        {{ session('success') }}
-    </div>
+    @include('admin.layouts.partials.alertSuccess')
     @endif
 
     <div class="row">
@@ -42,3 +39,5 @@
     </div>
 </div>
 @endsection
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
