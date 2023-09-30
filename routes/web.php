@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdministrativeOfficialsController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\HistoryController;
 use App\Http\Controllers\Admin\VissionMissionController;
@@ -48,3 +49,6 @@ Route::get('/admin/berita/checkSlug', [BlogController::class, 'checkSlug']);
 Route::get('/admin/sejarah', [HistoryController::class, 'index']);
 Route::post('/admin/history/create', [HistoryController::class, 'store']);
 Route::put('/admin/history/update', [HistoryController::class, 'update']);
+
+Route::resource('/admin/pejabat-administrasi', AdministrativeOfficialsController::class);
+Route::get('/admin/pejabat-administrasi/hapus/{id}', [AdministrativeOfficialsController::class, 'destroy']);

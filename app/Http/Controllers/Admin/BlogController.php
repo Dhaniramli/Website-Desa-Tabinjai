@@ -37,7 +37,7 @@ class BlogController extends Controller
         $validatedData = $request->validate([
             'title' => 'required|max:255',
             'slug' => 'required|unique:blogs',
-            'image' => 'image|file|max:1024',
+            'image' => 'image|file',
             'body' => 'required',
         ]);
 
@@ -70,7 +70,7 @@ class BlogController extends Controller
     {
         $rules = [
             'title' => 'required|max:255',
-            'image' => 'image|file|max:1024',
+            'image' => 'image|file',
             'body' => 'required',
         ];
 
