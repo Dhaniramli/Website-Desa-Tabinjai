@@ -22,7 +22,7 @@
                             @enderror
                         </div>
 
-                        <div class="mb-3">
+                        {{-- <div class="mb-3">
                             <label for="position" class="form-label">Jabatan</label>
                             <input type="text" class="form-control @error('position') is-invalid @enderror" id="position"
                                 name="position" required value="{{ old('position', $item->position) }}">
@@ -31,7 +31,36 @@
                                 {{ $message }}
                             </div>
                             @enderror
+                        </div> --}}
+                        <div class="mb-3">
+                            <label for="position" class="form-label">Jabatan</label>
+                            <select class="form-select @error('position') is-invalid @enderror" id="position"
+                                name="position" required>
+                                <option value="" selected disabled>Pilih Jabatan</option>
+                                <option value="Kepala Desa" {{ old('position', $item->position) == 'Kepala Desa' ? 'selected' : '' }}>Kepala Desa
+                                </option>
+                                <option value="Sekretaris Desa" {{ old('position', $item->position) == 'Sekretaris Desa' ? 'selected' : '' }}>Sekretaris Desa
+                                </option>
+                                <option value="Kasi Pemerintahan" {{ old('position', $item->position) == 'Kasi Pemerintahan' ? 'selected' : '' }}>Kasi Pemerintahan
+                                </option>
+                                <option value="Kasi Pembangunan" {{ old('position', $item->position) == 'Kasi Pembangunan' ? 'selected' : '' }}>Kasi Pembangunan
+                                </option>
+                                <option value="Kasi Kesra" {{ old('position', $item->position) == 'Kasi Kesra' ? 'selected' : '' }}>Kasi Kesra
+                                </option>
+                                <option value="Kaur Administrasi" {{ old('position', $item->position) == 'Kaur Administrasi' ? 'selected' : '' }}>Kaur Administrasi
+                                </option>
+                                <option value="Kaur Umum" {{ old('position', $item->position) == 'Kaur Umum' ? 'selected' : '' }}>Kaur Umum
+                                </option>
+                                <option value="Kaur Keuangan" {{ old('position', $item->position) == 'Kaur Keuangan' ? 'selected' : '' }}>Kaur Keuangan
+                                </option>
+                            </select>
+                            @error('position')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
                         </div>
+                        
 
 
                         <div class="mb-3">

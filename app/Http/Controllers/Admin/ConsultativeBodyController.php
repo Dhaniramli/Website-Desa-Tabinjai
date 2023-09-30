@@ -2,28 +2,28 @@
 
 namespace App\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\AdministrativeOfficials;
+use App\Models\ConsultativeBody;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
-class AdministrativeOfficialsController extends Controller
+class ConsultativeBodyController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $items = AdministrativeOfficials::all();
+        $items = ConsultativeBody::all();
 
-        return view('admin.administrativeOfficials.index', compact('items'));
+        return view('admin.consultativeBody.index', compact('items'));
     }
     /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
-        return view('admin.administrativeOfficials.create');
+        return view('admin.consultativeBody.create');
     }
 
     /**
@@ -38,12 +38,12 @@ class AdministrativeOfficialsController extends Controller
         ]);
 
         if ($request->file('image')) {
-            $validatedData['image'] = $request->file('image')->store('administrative-officials-images');
+            $validatedData['image'] = $request->file('image')->store('consultative-body-images');
         }
 
-        AdministrativeOfficials::create($validatedData);
+        ConsultativeBody::create($validatedData);
 
-        return redirect('/admin/pejabat-administrasi')->with('success', 'Berhasil ditambahkan!');
+        return redirect('/admin/badan-permusyawaratan')->with('success', 'Berhasil ditambahkan!');
     }
 
     /**
@@ -59,13 +59,13 @@ class AdministrativeOfficialsController extends Controller
      */
     public function edit(string $id)
     {
-        $item = AdministrativeOfficials::where('id', $id)->first();
+        $item = ConsultativeBody::where('id', $id)->first();
 
         if (!$item) {
             abort(404);
         }
 
-        return view('admin.administrativeOfficials.edit', compact('item'));
+        return view('admin.consultativeBody.edit', compact('item'));
     }
 
     /**
@@ -85,12 +85,12 @@ class AdministrativeOfficialsController extends Controller
             if($request->oldImage){
                 Storage::delete($request->oldImage);
             }
-            $validatedData['image'] = $request->file('image')->store('administrative-officials-images');
+            $validatedData['image'] = $request->file('image')->store('consultative-body-images');
         }
 
-        AdministrativeOfficials::where('id', $id)->update($validatedData);
+        ConsultativeBody::where('id', $id)->update($validatedData);
 
-        return redirect('/admin/pejabat-administrasi')->with('success', 'Berhasil diperbarui!');
+        return redirect('/admin/badan-permusyawaratan')->with('success', 'Berhasil diperbarui!');
     }
 
     /**
@@ -98,13 +98,13 @@ class AdministrativeOfficialsController extends Controller
      */
     public function destroy(string $id)
     {
-        $item = AdministrativeOfficials::where('id', $id)->first();
+        $item = ConsultativeBody::where('id', $id)->first();
 
         if($item->image){
             Storage::delete($item->image);
         }
-        AdministrativeOfficials::destroy($id);
+        ConsultativeBody::destroy($id);
 
-        return redirect('/admin/pejabat-administrasi')->with('success', 'Berhasil dihapus!');
+        return redirect('/admin/badan-permusyawaratan')->with('success', 'Berhasil dihapus!');
     }
 }

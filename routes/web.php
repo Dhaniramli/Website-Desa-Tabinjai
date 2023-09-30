@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AdministrativeOfficialsController;
 use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\ConsultativeBodyController;
 use App\Http\Controllers\Admin\HistoryController;
 use App\Http\Controllers\Admin\VissionMissionController;
 use Illuminate\Support\Facades\Route;
@@ -52,3 +53,6 @@ Route::put('/admin/history/update', [HistoryController::class, 'update']);
 
 Route::resource('/admin/pejabat-administrasi', AdministrativeOfficialsController::class);
 Route::get('/admin/pejabat-administrasi/hapus/{id}', [AdministrativeOfficialsController::class, 'destroy']);
+
+Route::resource('/admin/badan-permusyawaratan', ConsultativeBodyController::class);
+Route::get('/admin/badan-permusyawaratan/hapus/{id}', [ConsultativeBodyController::class, 'destroy']);
