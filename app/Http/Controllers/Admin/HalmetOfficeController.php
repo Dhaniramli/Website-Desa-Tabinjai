@@ -14,8 +14,14 @@ class HalmetOfficeController extends Controller
     {
         $item = Hamlet::where('id', $id)->first();
         $itemOffices = HamletOffice::where('hamlet_id', $id)->get();
-        
+
         return view('admin.hamletOffice.index', compact('item', 'itemOffices'));
+    }
+
+    public function create($id)
+    {
+        $item = Hamlet::where('id', $id)->first();
+        return view('admin.hamletOffice.create', compact('item'));
     }
 
     public function store(Request $request)
@@ -33,7 +39,18 @@ class HalmetOfficeController extends Controller
 
         HamletOffice::create($validatedData);
 
-        return redirect()->back()->with('success', 'Berhasil ditambahkan!');
+        return redirect('/admin/dusun/' . $validatedData['hamlet_id'] . '/data-pejabat')->with('success', 'Berhasil ditambahkan!');
+    }
+
+    public function edit(string $idOne, string $idTwo)
+    {
+        $item = HamletOffice::where('id', $idTwo)->first();
+
+        if (!$item) {
+            abort(404);
+        }
+
+        return view('admin.hamletOffice.edit', compact('item'));
     }
 
     public function update(Request $request, string $id)
@@ -48,7 +65,7 @@ class HalmetOfficeController extends Controller
         $validatedData = $request->validate($rules);
 
         if ($request->file('image')) {
-            if($request->oldImage){
+            if ($request->oldImage) {
                 Storage::delete($request->oldImage);
             }
             $validatedData['image'] = $request->file('image')->store('hamlet-office-images');
@@ -56,14 +73,14 @@ class HalmetOfficeController extends Controller
 
         HamletOffice::where('id', $id)->update($validatedData);
 
-        return redirect()->back()->with('success', 'Berhasil perbaharui!');
+        return redirect('/admin/dusun/' . $validatedData['hamlet_id'] . '/data-pejabat')->with('success', 'Berhasil diperbaharui!');
     }
 
     public function destroy(string $id)
     {
         $item = HamletOffice::where('id', $id)->first();
 
-        if($item->image){
+        if ($item->image) {
             Storage::delete($item->image);
         }
         HamletOffice::destroy($id);

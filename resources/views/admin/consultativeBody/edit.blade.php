@@ -77,6 +77,7 @@
 
             </div>
             <div class="card-footer d-flex justify-content-end">
+                <a href="{{ URL::previous() }}" class="btn btn-secondary">Kembali</a>
                 <button type="submit" class="btn btn-success ml-auto">Simpan</button>
             </div>
             </form>

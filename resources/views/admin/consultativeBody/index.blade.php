@@ -10,7 +10,7 @@
 
     <div class="card shadow mb-4">
         <div class="card-header">
-            <a href="/admin/badan-permusyawaratan/create" class="btn btn-success btn-icon-split">
+            <a href="/admin/badan-permusyawaratan/create" class="btn btn-success btn-icon-split float-right">
                 <span class="text">Tambah Pejabat</span>
             </a>
         </div>

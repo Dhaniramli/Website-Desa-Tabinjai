@@ -10,10 +10,10 @@
 
     <div class="card shadow mb-4">
         <div class="card-header">
-            <a href="/admin/dusun" class="btn btn-secondary">Kembali</a>
-            <button type="button" class="btn btn-success float-right" data-bs-toggle="modal" data-bs-target="#createPejabatDusun">
-                Tambah Pejabat
-            </button>
+            <a href="{{ URL::previous() }}" class="btn btn-secondary">Kembali</a>
+            <a href="/admin/pejabat-dusun/create/{{ $item->id }}" class="btn btn-success btn-icon-split float-right">
+                <span class="text">Tambah Pejabat</span>
+            </a>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -35,10 +35,7 @@
                             <td>{{ $itemOffice->position }}</td>
                             <td class="align-middle text-center"><img src="{{ asset('storage/' . $itemOffice->image) }}" alt="" style="width: 100px;"></td>
                             <td class="align-middle text-center">
-                                <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                    data-bs-target="#{{ 'editPejabatDusun' . $itemOffice->id }}">
-                                    Edit
-                                </button>
+                                <a href="/admin/dusun/{{ $item->id }}/data-pejabat/edit/{{ $itemOffice->id }}" class="btn btn-warning">Edit</a>
                                 <a id="deleteButton" href="/admin/pejabat-dusun/hapus/{{ $itemOffice->id }}" class="btn btn-danger">Hapus</a>
                             </td>
                         </tr>
@@ -51,11 +48,5 @@
 
 </div>
 @endsection
-
-@include('admin.hamletOffice.create')
-
-@foreach ($itemOffices as $itemOffice)
-@include('admin.hamletOffice.edit')
-@endforeach
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

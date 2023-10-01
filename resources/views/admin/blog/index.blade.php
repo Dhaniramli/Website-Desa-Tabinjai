@@ -10,7 +10,7 @@
 
     <div class="card shadow mb-4">
         <div class="card-header">
-            <a href="/admin/berita/create" class="btn btn-success btn-icon-split">
+            <a href="/admin/berita/create" class="btn btn-success btn-icon-split float-right">
                 <span class="text">Tambah Berita</span>
             </a>
         </div>

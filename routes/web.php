@@ -63,6 +63,8 @@ Route::resource('/admin/dusun', HalmetController::class);
 Route::get('/admin/dusun/hapus/{id}', [HalmetController::class, 'destroy']);
 
 Route::get('/admin/dusun/{id}/data-pejabat', [HalmetOfficeController::class, 'index']);
+Route::get('/admin/pejabat-dusun/create/{id}', [HalmetOfficeController::class, 'create']);
 Route::post('/admin/pejabat-dusun/store', [HalmetOfficeController::class, 'store']);
+Route::get('/admin/dusun/{idOne}/data-pejabat/edit/{idTwo}', [HalmetOfficeController::class, 'edit']);
 Route::put('/admin/pejabat-dusun/update/{id}', [HalmetOfficeController::class, 'update']);
 Route::get('/admin/pejabat-dusun/hapus/{id}', [HalmetOfficeController::class, 'destroy']);

@@ -9,7 +9,7 @@
                 <div class="card-body">
 
                     <h2 class="mb-3">{{ $item->title }}</h2>
-                    <a href="/admin/berita" class="btn btn-secondary"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+                    <a href="{{ URL::previous() }}" class="btn btn-secondary"><i class="fa fa-arrow-left" aria-hidden="true"></i>
                         Kembali</a>
                     <a href="/admin/berita/edit/{{ $item->slug }}" class="btn btn-warning"><i class="fa fa-keyboard"
                             aria-hidden="true"></i> Edit</a>
