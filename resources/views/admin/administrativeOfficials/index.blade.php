@@ -10,10 +10,7 @@
 
     <div class="card shadow mb-4">
         <div class="card-header">
-            <a href="/admin/pejabat-administrasi/create" class="btn btn-primary btn-icon-split">
-                <span class="icon text-white-50">
-                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                </span>
+            <a href="/admin/pejabat-administrasi/create" class="btn btn-success btn-icon-split">
                 <span class="text">Tambah Pejabat</span>
             </a>
         </div>

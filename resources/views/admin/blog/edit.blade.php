@@ -54,7 +54,7 @@
 
                     </div>
                     <div class="card-footer d-flex justify-content-end">
-                        <button type="submit" class="btn btn-primary ml-auto">Simpan</button>
+                        <button type="submit" class="btn btn-success ml-auto">Simpan</button>
                     </div>
                 </form>
             </div>

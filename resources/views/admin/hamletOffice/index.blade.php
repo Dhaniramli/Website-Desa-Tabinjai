@@ -11,7 +11,7 @@
     <div class="card shadow mb-4">
         <div class="card-header">
             <a href="/admin/dusun" class="btn btn-secondary">Kembali</a>
-            <button type="button" class="btn btn-primary float-right" data-bs-toggle="modal" data-bs-target="#createPejabatDusun">
+            <button type="button" class="btn btn-success float-right" data-bs-toggle="modal" data-bs-target="#createPejabatDusun">
                 Tambah Pejabat
             </button>
         </div>

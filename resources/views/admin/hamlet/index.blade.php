@@ -10,7 +10,7 @@
 
     <div class="card shadow mb-4">
         <div class="card-header">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createDusun">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createDusun">
                 Tambah Dusun
             </button>
         </div>

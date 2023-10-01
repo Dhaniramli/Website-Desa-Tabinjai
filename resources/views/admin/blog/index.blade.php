@@ -10,10 +10,7 @@
 
     <div class="card shadow mb-4">
         <div class="card-header">
-            <a href="/admin/berita/create" class="btn btn-primary btn-icon-split">
-                <span class="icon text-white-50">
-                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                </span>
+            <a href="/admin/berita/create" class="btn btn-success btn-icon-split">
                 <span class="text">Tambah Berita</span>
             </a>
         </div>
@@ -33,9 +30,9 @@
                         <tr>
                             <td class="col-1 align-middle text-center">{{ $loop->iteration }}</td>
                             <td>{{ $item->title }}</td>
-                            <td class="align-middle text-center"><img src="{{ asset('storage/' . $item->image) }}" alt="" style="height: 100px; width: 200px;"></td>
+                            <td class="align-middle text-center"><img src="{{ asset('storage/' . $item->image) }}" alt="" style="width: 200px;"></td>
                             <td class="align-middle text-center">
-                                <a href="/admin/berita/show/{{ $item->slug }}" class="btn btn-success">Lihat</a>
+                                <a href="/admin/berita/show/{{ $item->slug }}" class="btn btn-info">Lihat</a>
                                 <a href="/admin/berita/edit/{{ $item->slug }}" class="btn btn-warning">Edit</a>
                                 <a id="deleteButton" href="/admin/berita/hapus/{{ $item->slug }}" class="btn btn-danger">Hapus</a>
                             </td>

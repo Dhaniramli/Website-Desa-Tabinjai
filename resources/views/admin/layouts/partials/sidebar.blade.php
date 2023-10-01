@@ -1,4 +1,4 @@
-<ul class="navbar-nav sidebar bg-gradient-primary sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav sidebar bg-custom sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
@@ -44,7 +44,7 @@
         </a>
         <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item {{ Request::is('admin/pejabat-administrasi*') ? 'active' : ''}}" href="/admin/pejabat-administrasi">Pejabat Administrasi Desa</a>
+                <a class="collapse-item {{ Request::is('admin/pejabat-administrasi*') ? 'active' : ''}}" href="/admin/pejabat-administrasi">Pejabat Administrasi</a>
                 <a class="collapse-item {{ Request::is('admin/badan-permusyawaratan*') ? 'active' : ''}}" href="/admin/badan-permusyawaratan">BPD</a>
                 <a class="collapse-item {{ Request::is('admin/dusun*') ? 'active' : ''}}" href="/admin/dusun">Pejabat Dusun</a>
             </div>

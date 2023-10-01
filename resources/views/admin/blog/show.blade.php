@@ -8,9 +8,8 @@
             <div class="card shadow">
                 <div class="card-body">
 
-
                     <h2 class="mb-3">{{ $item->title }}</h2>
-                    <a href="/admin/berita" class="btn btn-success"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+                    <a href="/admin/berita" class="btn btn-secondary"><i class="fa fa-arrow-left" aria-hidden="true"></i>
                         Kembali</a>
                     <a href="/admin/berita/edit/{{ $item->slug }}" class="btn btn-warning"><i class="fa fa-keyboard"
                             aria-hidden="true"></i> Edit</a>
@@ -18,11 +17,12 @@
                             aria-hidden="true"></i> Hapus</a>
 
                     @if ($item->image)
-                    <div class="" style="max-height: 350px; overflow:hidden;">
-                        <img src="{{ asset('storage/' . $item->image) }}" alt="" class="img-fluid mt-3">
+                    {{-- <div class="" style="max-height: 350px; overflow:hidden;"> --}}
+                    <div class="" style="width: 100%;">
+                        <img src="{{ asset('storage/' . $item->image) }}" alt="" class="img-fluid mt-3 w-100">
                     </div>
                     @else
-                    <img src="https://source.unsplash.com/1200x400?personal" alt="" class="img-fluid mt-3">
+                    <img src="https://source.unsplash.com/1200x400?noimage" alt="" class="img-fluid mt-3">
                     @endif
 
                     <article class="my-3 fs-5">

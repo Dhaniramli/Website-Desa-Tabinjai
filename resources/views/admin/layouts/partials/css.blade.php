@@ -9,9 +9,9 @@
 
 <!-- Custom styles for this template-->
 <link href="/css/sb-admin-2.min.css" rel="stylesheet">
+<link href="/css/sb-admin-2.css" rel="stylesheet">
 
-<link href="/css/admin/sidebar.css" rel="stylesheet">
-<link href="/css/admin/topbar.css" rel="stylesheet">
+<link href="/css/admin/layouts.css" rel="stylesheet">
 
 <!-- Custom styles for this page -->
 <link href="/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
