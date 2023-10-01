@@ -99,9 +99,39 @@
                 icon: 'success',
                 title: 'Your work has been saved',
                 showConfirmButton: false,
-                timer: 1500
+                timer: 1000
             })
         })
     })
+
+</script>
+
+{{-- IMAGE PRIVIEW --}}
+
+<script>
+    function previewImage() {
+        const imageInput = document.getElementById('image');
+        const imgPreview = document.querySelector('.img-preview');
+
+        const file = imageInput.files[0];
+        const reader = new FileReader();
+
+        reader.onload = function () {
+            imgPreview.src = reader.result;
+        };
+
+        if (file) {
+            reader.readAsDataURL(file);
+            imgPreview.style.display = 'block'; // Tampilkan elemen gambar jika ada gambar yang dipilih.
+        } else {
+            imgPreview.src = '';
+            imgPreview.style.display = 'none'; // Sembunyikan elemen gambar jika tidak ada gambar yang dipilih.
+        }
+    }
+
+    // Panggil previewImage() saat halaman dimuat jika Anda ingin menampilkan gambar default jika ada yang telah dipilih sebelumnya
+    window.addEventListener('DOMContentLoaded', function () {
+        previewImage();
+    });
 
 </script>

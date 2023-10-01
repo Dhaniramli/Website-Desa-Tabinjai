@@ -36,17 +36,17 @@
             <span>Sejarah</span></a>
     </li>
 
-    <li class="nav-item {{ Request::is('admin/pejabat-administrasi*') || Request::is('admin/badan-permusyawaratan*') || Request::is('admin/pejabat-dusun*') ? 'active' : '' }}">
+    <li class="nav-item {{ Request::is('admin/pejabat-administrasi*') || Request::is('admin/badan-permusyawaratan*') || Request::is('admin/dusun*') ? 'active' : '' }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
             aria-expanded="true" aria-controls="collapseOne">
-            <i class="fa fa-futbol"></i>
+            <i class="fa fa-users"></i>
             <span>Data Pejabat</span>
         </a>
         <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item {{ Request::is('admin/pejabat-administrasi*') ? 'active' : ''}}" href="/admin/pejabat-administrasi">Pejabat Administrasi Desa</a>
                 <a class="collapse-item {{ Request::is('admin/badan-permusyawaratan*') ? 'active' : ''}}" href="/admin/badan-permusyawaratan">BPD</a>
-                <a class="collapse-item {{ Request::is('admin/pejabat-dusun*') ? 'active' : ''}}" href="/admin/pejabat-dusun">Pejabat Dusun</a>
+                <a class="collapse-item {{ Request::is('admin/dusun*') ? 'active' : ''}}" href="/admin/dusun">Pejabat Dusun</a>
             </div>
         </div>
     </li>

@@ -3,6 +3,8 @@
 use App\Http\Controllers\Admin\AdministrativeOfficialsController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\ConsultativeBodyController;
+use App\Http\Controllers\Admin\HalmetController;
+use App\Http\Controllers\Admin\HalmetOfficeController;
 use App\Http\Controllers\Admin\HistoryController;
 use App\Http\Controllers\Admin\VissionMissionController;
 use Illuminate\Support\Facades\Route;
@@ -56,3 +58,11 @@ Route::get('/admin/pejabat-administrasi/hapus/{id}', [AdministrativeOfficialsCon
 
 Route::resource('/admin/badan-permusyawaratan', ConsultativeBodyController::class);
 Route::get('/admin/badan-permusyawaratan/hapus/{id}', [ConsultativeBodyController::class, 'destroy']);
+
+Route::resource('/admin/dusun', HalmetController::class);
+Route::get('/admin/dusun/hapus/{id}', [HalmetController::class, 'destroy']);
+
+Route::get('/admin/dusun/{id}/data-pejabat', [HalmetOfficeController::class, 'index']);
+Route::post('/admin/pejabat-dusun/store', [HalmetOfficeController::class, 'store']);
+Route::put('/admin/pejabat-dusun/update/{id}', [HalmetOfficeController::class, 'update']);
+Route::get('/admin/pejabat-dusun/hapus/{id}', [HalmetOfficeController::class, 'destroy']);
