@@ -49,9 +49,8 @@ Route::get('/admin/berita/hapus/{slug}', [BlogController::class, 'destroy']);
 Route::get('/admin/berita/show/{slug}', [BlogController::class, 'show']);
 Route::get('/admin/berita/checkSlug', [BlogController::class, 'checkSlug']);
 
-Route::get('/admin/sejarah', [HistoryController::class, 'index']);
-Route::post('/admin/history/create', [HistoryController::class, 'store']);
-Route::put('/admin/history/update', [HistoryController::class, 'update']);
+Route::resource('/admin/sejarah', HistoryController::class);
+Route::get('/admin/sejarah/delete/{id}', [HistoryController::class, 'destroy']);
 
 Route::resource('/admin/pejabat-administrasi', AdministrativeOfficialsController::class);
 Route::get('/admin/pejabat-administrasi/hapus/{id}', [AdministrativeOfficialsController::class, 'destroy']);

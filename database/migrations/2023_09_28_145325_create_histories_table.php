@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('histories', function (Blueprint $table) {
             $table->id();
-            $table->text('body')->nullable();
+            $table->text('body');
             $table->timestamps();
         });
     }

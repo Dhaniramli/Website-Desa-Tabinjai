@@ -11,28 +11,28 @@
     <div class="row">
         <div class="col-lg-12  mx-auto my-auto">
             <div class="card shadow mb-4">
-                <form action="/admin/history/{{ ($items->count() ? 'update' : 'create') }}" method="POST">
-                    @csrf
-                    @if ($items->count())
-                    @method('put')
-                    @endif
+              
 
-                    <input type="hidden" name="id" value="1">
-
-                    <div class="card-body">
-                        <div class="mb-3">
-                            @error('body')
-                            {{-- <p class="text-danger">{{ $message }}</p> --}}
-                            @enderror
-                            <input id="body" type="hidden" name="body"
-                                value="{{ old('body', ($items->count() ? $items[0]->body : '')) }}">
-                            <trix-editor input="body"></trix-editor>
+                    <div class="card-body" style="min-height: 300px">
+                        @if ($item)
+                        <div class="teks mt-3">
+                            {!! $item->body !!}
                         </div>
+                        @else
+                        <div class="d-flex justify-content-center align-items-center" style="min-height: 300px;">
+                            <p class="text-center">Belum ada data!</p>
+                        </div>
+                        
+                        @endif
                     </div>
                     <div class="card-footer d-flex">
-                        <button type="submit" class="btn btn-success ml-auto">Simpan</button>
+                        @if ($item)
+                        <a href="/admin/sejarah/{{ $item->id }}/edit" class="btn btn-success ml-auto">Edit</a>
+                        <a id="deleteButton" href="/admin/sejarah/delete/{{ $item->id }}" class="btn btn-danger ml-3">Hapus</a>
+                        @else
+                        <a href="/admin/sejarah/create" class="btn btn-success ml-auto">Tambah</a>
+                        @endif
                     </div>
-                </form>
             </div>
         </div>
 
