@@ -6,6 +6,8 @@ use App\Http\Controllers\Admin\ConsultativeBodyController;
 use App\Http\Controllers\Admin\HalmetController;
 use App\Http\Controllers\Admin\HalmetOfficeController;
 use App\Http\Controllers\Admin\HistoryController;
+use App\Http\Controllers\Admin\MissionController;
+use App\Http\Controllers\Admin\VissionController;
 use App\Http\Controllers\Admin\VissionMissionController;
 use Illuminate\Support\Facades\Route;
 
@@ -34,12 +36,6 @@ Route::get('/admin', function () {
     return view('admin.index');
 });
 
-Route::get('/admin/visi-misi', [VissionMissionController::class, 'index']);
-Route::post('/admin/vission/create', [VissionMissionController::class, 'storeVission']);
-Route::put('/admin/vission/update', [VissionMissionController::class, 'updateVission']);
-Route::post('/admin/mission/create', [VissionMissionController::class, 'storeMission']);
-Route::put('/admin/mission/update', [VissionMissionController::class, 'updateMission']);
-
 Route::get('/admin/berita', [BlogController::class, 'index']);
 Route::get('/admin/berita/create', [BlogController::class, 'create']);
 Route::post('/admin/berita/store', [BlogController::class, 'store']);
@@ -51,6 +47,12 @@ Route::get('/admin/berita/checkSlug', [BlogController::class, 'checkSlug']);
 
 Route::resource('/admin/sejarah', HistoryController::class);
 Route::get('/admin/sejarah/delete/{id}', [HistoryController::class, 'destroy']);
+
+Route::resource('/admin/visi', VissionController::class);
+Route::get('/admin/visi/delete/{id}', [VissionController::class, 'destroy']);
+
+Route::resource('/admin/mission', MissionController::class);
+Route::get('/admin/mission/delete/{id}', [MissionController::class, 'destroy']);
 
 Route::resource('/admin/pejabat-administrasi', AdministrativeOfficialsController::class);
 Route::get('/admin/pejabat-administrasi/hapus/{id}', [AdministrativeOfficialsController::class, 'destroy']);
