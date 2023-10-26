@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\HalmetController;
 use App\Http\Controllers\Admin\HalmetOfficeController;
 use App\Http\Controllers\Admin\HistoryController;
 use App\Http\Controllers\Admin\MissionController;
+use App\Http\Controllers\Admin\TotalPopulationController;
 use App\Http\Controllers\Admin\VissionController;
 use App\Http\Controllers\Admin\VissionMissionController;
 use Illuminate\Support\Facades\Route;
@@ -69,3 +70,6 @@ Route::post('/admin/pejabat-dusun/store', [HalmetOfficeController::class, 'store
 Route::get('/admin/dusun/{idOne}/data-pejabat/edit/{idTwo}', [HalmetOfficeController::class, 'edit']);
 Route::put('/admin/pejabat-dusun/update/{id}', [HalmetOfficeController::class, 'update']);
 Route::get('/admin/pejabat-dusun/hapus/{id}', [HalmetOfficeController::class, 'destroy']);
+
+Route::resource('/admin/jumlah-penduduk', TotalPopulationController::class);
+Route::get('/admin/jumlah-penduduk/hapus/{id}', [TotalPopulationController::class, 'destroy']);
