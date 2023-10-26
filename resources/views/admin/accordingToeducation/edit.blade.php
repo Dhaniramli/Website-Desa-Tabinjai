@@ -10,19 +10,19 @@
     <div class="row">
         <div class="col-lg-6  mx-auto my-auto">
             <div class="card shadow mb-4">
-                <form action="/admin/umur/{{ $item->id }}" method="POST">
+                <form action="/admin/pendidikan/{{ $item->id }}" method="POST">
                     @csrf
                     @method('put')
 
                     <div class="card-header">
-                        <h5 class="h3 text-gray-800">Tambah Jumlah Penduduk</h5>
+                        <h5 class="h3 text-gray-800">Edit Jumlah Penduduk</h5>
                     </div>
                     <div class="card-body">
                         <div class="mb-3">
-                            <label for="age" class="form-label">Umur</label>
-                            <input type="text" class="form-control @error('age') is-invalid @enderror" id="age"
-                                name="age" required value="{{ old('age', $item->age) }}">
-                            @error('age')
+                            <label for="education" class="form-label">Pendidikan</label>
+                            <input type="text" class="form-control @error('education') is-invalid @enderror" id="education"
+                                name="education" required value="{{ old('education', $item->education) }}">
+                            @error('education')
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>

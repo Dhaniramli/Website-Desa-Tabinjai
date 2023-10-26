@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AccordingToageController;
+use App\Http\Controllers\Admin\AccordingToeducationController;
 use App\Http\Controllers\Admin\AdministrativeOfficialsController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\ConsultativeBodyController;
@@ -77,3 +78,6 @@ Route::get('/admin/jumlah-penduduk/hapus/{id}', [TotalPopulationController::clas
 
 Route::resource('/admin/umur', AccordingToageController::class);
 Route::get('/admin/umur/hapus/{id}', [AccordingToageController::class, 'destroy']);
+
+Route::resource('/admin/pendidikan', AccordingToeducationController::class);
+Route::get('/admin/pendidikan/hapus/{id}', [AccordingToeducationController::class, 'destroy']);
