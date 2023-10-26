@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AccordingToageController;
 use App\Http\Controllers\Admin\AccordingToeducationController;
+use App\Http\Controllers\Admin\AccordingToincomeController;
 use App\Http\Controllers\Admin\AccordingToworkController;
 use App\Http\Controllers\Admin\AdministrativeOfficialsController;
 use App\Http\Controllers\Admin\BlogController;
@@ -12,7 +13,6 @@ use App\Http\Controllers\Admin\HistoryController;
 use App\Http\Controllers\Admin\MissionController;
 use App\Http\Controllers\Admin\TotalPopulationController;
 use App\Http\Controllers\Admin\VissionController;
-use App\Http\Controllers\Admin\VissionMissionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -85,3 +85,6 @@ Route::get('/admin/pendidikan/hapus/{id}', [AccordingToeducationController::clas
 
 Route::resource('/admin/pekerjaan', AccordingToworkController::class);
 Route::get('/admin/pekerjaan/hapus/{id}', [AccordingToworkController::class, 'destroy']);
+
+Route::resource('/admin/penghasilan', AccordingToincomeController::class);
+Route::get('/admin/penghasilan/hapus/{id}', [AccordingToincomeController::class, 'destroy']);
