@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AccordingToageController;
 use App\Http\Controllers\Admin\AccordingToeducationController;
+use App\Http\Controllers\Admin\AccordingTogenderController;
 use App\Http\Controllers\Admin\AccordingToincomeController;
 use App\Http\Controllers\Admin\AccordingToworkController;
 use App\Http\Controllers\Admin\AdministrativeOfficialsController;
@@ -76,6 +77,9 @@ Route::get('/admin/pejabat-dusun/hapus/{id}', [HalmetOfficeController::class, 'd
 
 Route::resource('/admin/jumlah-penduduk', TotalPopulationController::class);
 Route::get('/admin/jumlah-penduduk/hapus/{id}', [TotalPopulationController::class, 'destroy']);
+
+Route::resource('/admin/jenis-kelamin', AccordingTogenderController::class);
+Route::get('/admin/jenis-kelamin/hapus/{id}', [AccordingTogenderController::class, 'destroy']);
 
 Route::resource('/admin/umur', AccordingToageController::class);
 Route::get('/admin/umur/hapus/{id}', [AccordingToageController::class, 'destroy']);
