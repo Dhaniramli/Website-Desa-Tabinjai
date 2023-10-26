@@ -70,7 +70,6 @@
         </a>
         <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item {{ Request::is('admin/jumlah-penduduk*') ? 'active' : ''}}" href="/admin/jumlah-penduduk">Jumlah Penduduk</a>
                 <a class="collapse-item {{ Request::is('admin/jenis-kelamin*') ? 'active' : ''}}" href="/admin/jenis-kelamin">Menurut Jenis Kelamin</a>
                 <a class="collapse-item {{ Request::is('admin/umur*') ? 'active' : ''}}" href="/admin/umur">Menurut Umur</a>
                 <a class="collapse-item {{ Request::is('admin/pendidikan*') ? 'active' : ''}}" href="/admin/pendidikan">Menurut Pendidikan</a>
