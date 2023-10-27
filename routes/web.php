@@ -27,16 +27,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+// Route::get('/', function () {
+//     return view('index');
+// });
+Route::get('/home', function () {
     return view('index');
 });
-
-
 Route::get('/profil_desa', function () {
     return view('profil_desa');
 });
 
+Route::get('/', function () {
+    return view('user.layouts.main');
+});
 
+
+
+
+
+// ADMIN
 Route::get('/admin', function () {
     return view('admin.index');
 });
@@ -92,3 +101,4 @@ Route::get('/admin/pekerjaan/hapus/{id}', [AccordingToworkController::class, 'de
 
 Route::resource('/admin/penghasilan', AccordingToincomeController::class);
 Route::get('/admin/penghasilan/hapus/{id}', [AccordingToincomeController::class, 'destroy']);
+// AKHIR ADMIN

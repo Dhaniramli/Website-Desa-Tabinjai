@@ -1,0 +1,57 @@
+footer {
+    color: white;
+}
+
+footer h1 {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+footer p {
+    font-weight: 200;
+    font-size: 17px;
+}
+
+footer h5 {
+    font-weight: 200;
+    font-size: 14px;
+}
+
+footer a{
+    color: white;
+}
+
+footer .btn-kontak{
+    background-color: #04C26D;
+    color: white;
+}
+footer .btn-kontak:hover{
+    background-color: #01864a;
+    color: white;
+}
+
+footer .bawah-dua {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .bawah-dua a {
+    font-weight: 200;
+    font-size: 14px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    footer .bawah-dua {
+        text-align: right;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    footer .bawah-satu {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
