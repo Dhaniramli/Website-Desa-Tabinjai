@@ -11,15 +11,15 @@
             </div>
         </div>
         <div class="tombol">
-            <a href="#" class="btn btn-tombol">Visi Misi</a>
-            <a href="#" class="btn btn-tombol">Sejarah</a>
-            <a href="#" class="btn btn-tombol">Lebih Lengkap</a>
+            <a href="#visi-misi" class="btn btn-tombol">Visi Misi</a>
+            <a href="#sejarah" class="btn btn-tombol">Sejarah</a>
+            <a href="#geografis" class="btn btn-tombol">Letak Geografis</a>
         </div>
     </div>
 </div>
 
 {{-- SEJARAH --}}
-<div class="container-fluid sejarah-1" style="background-image: url('{{ asset('images/bg-sejarah.png') }}'); background-size: cover;">
+<div id="sejarah" class="container-fluid sejarah-1" style="background-image: url('{{ asset('images/bg-sejarah.png') }}'); background-size: cover;">
     <h1 class="text-center">Sejarah Desa Tabbinjai</h1>
 
     <div class="container sejarah-2">
@@ -31,7 +31,7 @@
 </div>
 
 {{-- VISI MISI --}}
-<div class="container profil-desa-vismis">
+<div class="container profil-desa-vismis" id="visi-misi">
     <div class="row visi-misi">
         <div class="col-lg-6 home-3">
             <div class="visi-logo">
@@ -55,6 +55,14 @@
                 {!! $misi->body !!}
             </div>
         </div>
+    </div>
+</div>
+
+{{-- LETAK GEOGRAFIS --}}
+<div id="geografis" class="container-fluid geografis p-0">
+    <h1 class="text-center">Letak Geografis</h1>
+    <div class="mapping">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63577.285205184926!2d119.95204529119104!3d-5.171001636111848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbe9a145b79f9c9%3A0x5194792c31e69de3!2sTabbinjai%2C%20Kec.%20Tombolo%20Pao%2C%20Kabupaten%20Gowa%2C%20Sulawesi%20Selatan!5e0!3m2!1sid!2sid!4v1698487889961!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </div>
 @endsection

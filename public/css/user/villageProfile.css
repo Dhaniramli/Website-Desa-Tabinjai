@@ -174,3 +174,36 @@
 }
 
 /* AKHIR VISI MISI PROFIL DESA */
+
+/* GEOGRAFIS */
+.geografis{
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
+.geografis h1{
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #009D4C;
+}
+
+.geografis .mapping{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #009D4C;
+    height: 90vh;
+}
+
+@media (max-width: 768px) {
+    .geografis h1{
+        font-size: 30px;
+    }
+    .geografis .mapping{
+        height: 70vh;
+    }
+    .geografis{
+        margin-bottom: 10px;
+    }
+}
+/* AKHIR GEOGRAFIS */
