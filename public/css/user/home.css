@@ -203,4 +203,21 @@
     border-bottom-right-radius: 20px;
 }
 
+@media (max-width: 768px) {
+    .pejabat-desa h1{
+        font-size: 30px;
+    }
+    .pejabat-desa .card-title {
+        font-size: 17px;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .pejabat-desa .card-subtitle {
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 300;
+        color: white;
+    }
+}
 /* AKHIR PEJABAT */
