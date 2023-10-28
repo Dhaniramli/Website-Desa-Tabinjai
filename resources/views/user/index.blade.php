@@ -3,12 +3,12 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-lg-6 home-1 order-lg-1 order-2">
+        <div class="col-lg-6 home-1 order-lg-1 order-1">
             <h1>Selamat Datang Di Website <span class="green-text">Desa Tabbinjai</span></h1>
             <p><span class="bold-text">Website Desa Tabbinjai</span> adalah usaha menggambarkan secara utuh tentang
                 kondisi Desa. Data-data yang disusun diambil dari semua data yang tersedia dan bisa didapatkan.</p>
         </div>
-        <div class="col-lg-6 home-2 order-lg-2 order-1">
+        <div class="col-lg-6 home-2 order-lg-2 order-2">
             <div class="image-home-2">
                 <img src="{{ asset('images/Group 114.png') }}" alt="">
             </div>
