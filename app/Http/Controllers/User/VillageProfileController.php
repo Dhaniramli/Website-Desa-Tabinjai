@@ -21,4 +21,10 @@ class VillageProfileController extends Controller
 
         return view('user.villageProfile.index', compact('visi', 'misi', 'sejarah'));
     }
+
+    public function showSejarah() {
+        $sejarah = History::where('id', 1)->first();
+
+        return view('user.villageProfile.history', compact('sejarah'));
+    }
 }

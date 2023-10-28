@@ -41,6 +41,7 @@ Route::get('/profil_desa', function () {
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/profil-desa', [VillageProfileController::class, 'index'])->name('profilDesa');
+Route::get('/profil-desa/sejarah', [VillageProfileController::class, 'showSejarah'])->name('showSejarah');
 
 
 

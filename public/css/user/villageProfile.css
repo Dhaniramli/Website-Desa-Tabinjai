@@ -104,7 +104,7 @@
 }
 
 @media (max-width: 768px) {
-    .sejarah-1{
+    .sejarah-1 {
         padding-top: 100px;
     }
 
@@ -113,6 +113,47 @@
     }
 
     .sejarah-1 .card-sejarah {
+        font-size: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+/* SHOW SEJARAH */
+.show-sejarah {
+    min-height: 100vh;
+}
+
+.show-sejarah h1 {
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #009D4C;
+}
+
+.card-show-sejarah {
+    border-radius: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+
+    .show-sejarah h1 {
+        margin-top: 100px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .card-show-sejarah {
+        padding-top: 20px;
         font-size: 15px;
         padding-top: 30px;
         padding-bottom: 30px;
