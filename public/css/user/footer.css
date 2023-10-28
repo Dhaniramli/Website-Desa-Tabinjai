@@ -40,6 +40,7 @@ footer .bawah-dua a {
     font-weight: 200;
     font-size: 14px;
     color: white;
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -53,5 +54,13 @@ footer .bawah-dua a {
     footer .bawah-satu {
         text-align: center;
         margin-bottom: 20px;
+    }
+
+    footer h1{
+        font-size: 23px;
+    }
+
+    footer p{
+        font-size: 15px;
     }
 }
