@@ -17,4 +17,44 @@
         </div>
     </div>
 </div>
+
+{{-- SEJARAH --}}
+<div class="container-fluid sejarah-1" style="background-image: url('{{ asset('images/bg-sejarah.png') }}'); background-size: cover;">
+    <h1 class="text-center">Sejarah Desa Tabbinjai</h1>
+
+    <div class="container sejarah-2">
+        <div class="card card-sejarah">
+            {!! substr($sejarah->body, 0, 1048) !!}
+            <a href="/profil-desa/sejarah" class="selengkapnya">Lihat selengkapnya...</a>
+        </div>
+    </div>
+</div>
+
+{{-- VISI MISI --}}
+<div class="container profil-desa-vismis">
+    <div class="row visi-misi">
+        <div class="col-lg-6 home-3">
+            <div class="visi-logo">
+                <img src="{{ asset('images/Frame 40.png') }}" alt="">
+            </div>
+            <div class="visi-title">
+                <h1>Visi</h1>
+            </div>
+            <div class="visi-content">
+                {!! $visi->body !!}
+            </div>
+        </div>
+        <div class="col-lg-6 home-4">
+            <div class="misi-logo">
+                <img src="{{ asset('images/Frame 39.png') }}" alt="">
+            </div>
+            <div class="misi-title">
+                <h1>Misi</h1>
+            </div>
+            <div class="misi-content">
+                {!! $misi->body !!}
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

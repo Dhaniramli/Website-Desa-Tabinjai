@@ -54,7 +54,7 @@
         text-align: center;
     }
 
-    .profil-desa-2{
+    .profil-desa-2 {
         align-items: center;
     }
 
@@ -70,3 +70,66 @@
 }
 
 /* AKHIR PROFIL DESA */
+
+/* SEJARAH */
+.sejarah-1 {
+    height: 100vh;
+    padding-top: 300px;
+}
+
+.sejarah-1 h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.sejarah-1 .card-sejarah {
+    min-height: 300px;
+    border-radius: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    font-size: 20px;
+}
+
+.sejarah-2 .selengkapnya {
+    margin-top: 20px;
+}
+
+.sejarah-2 a {
+    text-decoration: none;
+    color: #009D4C;
+}
+
+@media (max-width: 768px) {
+    .sejarah-1{
+        padding-top: 100px;
+    }
+
+    .sejarah-1 h1 {
+        font-size: 30px;
+    }
+
+    .sejarah-1 .card-sejarah {
+        font-size: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+/* AKHIR SEJARAH */
+
+/* VISI MISI PROFIL DESA */
+.profil-desa-vismis {
+    margin-top: 80px;
+}
+
+.profil-desa-vismis h1 {
+    color: #009D4C;
+}
+
+/* AKHIR VISI MISI PROFIL DESA */
