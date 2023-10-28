@@ -17,7 +17,7 @@
                     <a class="nav-link {{ Request::is('profil-desa*') ? 'active' : ''}}" href="{{ Route('profilDesa') }}">Profil Desa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pemerintahan</a>
+                    <a class="nav-link {{ Request::is('pemerintahan*') ? 'active' : ''}}" href="{{ Route('index-pemerintahan') }}">Pemerintahan</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Produk Desa</a>

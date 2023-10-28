@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\HistoryController;
 use App\Http\Controllers\Admin\MissionController;
 use App\Http\Controllers\Admin\TotalPopulationController;
 use App\Http\Controllers\Admin\VissionController;
+use App\Http\Controllers\User\GovernmentController;
 use App\Http\Controllers\User\HomeController;
 use App\Http\Controllers\User\VillageProfileController;
 use Illuminate\Support\Facades\Route;
@@ -43,6 +44,7 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/profil-desa', [VillageProfileController::class, 'index'])->name('profilDesa');
 Route::get('/profil-desa/sejarah', [VillageProfileController::class, 'showSejarah'])->name('showSejarah');
 
+Route::get('/pemerintahan', [GovernmentController::class, 'index'])->name('index-pemerintahan');
 
 
 

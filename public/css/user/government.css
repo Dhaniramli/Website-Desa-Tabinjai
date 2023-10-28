@@ -1,0 +1,273 @@
+/* PEMERINTAHAN */
+.pemerintahan-1 {
+    height: 100vh;
+}
+
+.pemerintahan-2 {
+    height: 100vh;
+}
+
+.pemerintahan-2 h1 {
+    margin-top: 90px;
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.pemerintahan-2 span {
+    color: #009D4C;
+}
+
+@media (max-width: 768px) {
+    .pemerintahan-2 h1 {
+        margin-top: 130px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .pemerintahan-1{
+        height: 50vh;
+    }
+
+    .pemerintahan-2 {
+        height: 50vh;
+    }
+}
+
+/* AKHIR PEMERINTAHAN */
+
+/* STRUKTUR ORGANISASI */
+.struktur-organisasi{
+    background-color: #E5F2E9;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+.struktur-organisasi h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #009D4C;
+}
+
+.struktur-organisasi-2{
+    padding-top: 50px;
+}
+
+.struktur-organisasi-2 .card {
+    background-color: transparent;
+    border: none;
+    margin: 0 .3em;
+}
+
+.struktur-organisasi-2 .card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.struktur-organisasi-2 .card-subtitle {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+}
+
+/* PERTAMA */
+.struktur-organisasi-2 .img2 {
+    margin-top: 130px;
+    background-color: #04C26D;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.struktur-organisasi-2 .img2 img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid #04C26D;
+    margin-top: -130px;
+}
+
+.struktur-organisasi-2 .content-text {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #04C26D;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/* AKHIR PERTAMA */
+
+/* KEDUA */
+.struktur-organisasi-2 .pejabat-desa-2 .img2 {
+    margin-top: 130px;
+    background-color: #04C292;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.struktur-organisasi-2 .pejabat-desa-2 .img2 img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid #04C292;
+    margin-top: -130px;
+}
+
+.struktur-organisasi-2 .pejabat-desa-2 .content-text {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #04C292;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/* AKHIR KEDUA */
+
+/* KETIGA */
+.struktur-organisasi-2 .pejabat-desa-3 .img2 {
+    margin-top: 130px;
+    background-color: #04C2B2;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.struktur-organisasi-2 .pejabat-desa-3 .img2 img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid #04C2B2;
+    margin-top: -130px;
+}
+
+.struktur-organisasi-2 .pejabat-desa-3 .content-text {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #04C2B2;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/* AKHIR KETIGA */
+
+.pejabat-desa-1{
+    margin-top: 100px;
+}
+.pejabat-desa-2 .card-pejabat{
+    margin-top: 100px;
+}
+.pejabat-desa-3 .card-pejabat{
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    .struktur-organisasi h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .pejabat-desa-1{
+        margin-top: 50px;
+    }
+    .pejabat-desa-2 .card-pejabat{
+        margin-top: 50px;
+    }
+    .pejabat-desa-3 .card-pejabat{
+        margin-top: 50px;
+    }
+}
+/* AKHIR STRUKTUR ORGANISASI */
+
+/* BPD */
+.bpd{
+    background-color: white;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+.bpd h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #009D4C;
+}
+
+.bpd-2{
+    padding-top: 50px;
+}
+
+.bpd-3{
+    margin-top: 50px;
+}
+
+.bpd-2 .card {
+    background-color: transparent;
+    border: none;
+    margin: 0 .3em;
+}
+
+.bpd-2 .card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.bpd-2 .card-subtitle {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+}
+
+.bpd-2 .img2 {
+    margin-top: 130px;
+    background-color: #04C22D;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.bpd-2 .img2 img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid #04C22D;
+    margin-top: -130px;
+}
+
+.bpd-2 .content-text {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #04C22D;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@media (max-width: 991px) {
+    .bpd-3 .card-pejabat{
+        margin-top: 50px;
+    }
+}
+/* AKHIR BPD */
