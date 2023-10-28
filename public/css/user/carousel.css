@@ -1,0 +1,100 @@
+
+/* CAROUSEL GALERY */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.carousel-main {
+    margin-bottom: -100px;
+    height: auto;
+}
+
+.carousel-galeri .carousel-cell {
+    width: 30%;
+    height: 400px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .carousel-galeri .carousel-cell {
+        width: 100%; 
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .carousel-galeri .carousel-cell {
+        width: 50%; 
+        margin: 0 auto;
+    }
+}
+
+/* cell number */
+
+@media (min-width: 768px) {
+    .carousel-inner-gallery {
+        display: flex;
+    }
+
+    .carousel-item-gallery {
+        margin-right: 0;
+        flex: 0 0 33.333333%;
+        display: block;
+    }
+}
+
+.carousel-inner-gallery {
+    padding: 1em;
+}
+
+.carousel-inner-gallery img {
+    max-height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.carousel-inner-gallery h5 {
+    text-align: center;
+    font-size: 1pc;
+}
+
+.carousel-galeri .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+.carousel-galeri .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: none;
+}
+
+/* .carousel-galeri img{
+    display: block;
+    width: 100%;
+} */
+
+.carousel-galeri h5{
+    font-size: 0.8pc;
+}
+
+.carousel-galeri .card-body{
+    padding-top: 15px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    background-color: #04C26D;
+}
+
+.pejabat-desa .carousel-main .flickity-page-dots .dot {
+    background: white;
+}
+/* AKHIR CAROUSEL GALERY */

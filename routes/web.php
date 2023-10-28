@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\HistoryController;
 use App\Http\Controllers\Admin\MissionController;
 use App\Http\Controllers\Admin\TotalPopulationController;
 use App\Http\Controllers\Admin\VissionController;
+use App\Http\Controllers\User\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,9 +38,7 @@ Route::get('/profil_desa', function () {
     return view('profil_desa');
 });
 
-Route::get('/', function () {
-    return view('user.layouts.main');
-});
+Route::get('/', [HomeController::class, 'index']);
 
 
 
