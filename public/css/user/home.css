@@ -219,5 +219,9 @@
         font-weight: 300;
         color: white;
     }
+    .pejabat-desa {
+        height: 640px;
+        padding-top: 47px;
+    }
 }
 /* AKHIR PEJABAT */
