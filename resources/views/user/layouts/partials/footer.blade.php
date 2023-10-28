@@ -3,7 +3,7 @@
         <div class="container">
             <h1 class="text-center">Website Desa Tabbinjai</h1>
             <div class="row">
-                <div class="col-lg-6 col-md-7 mx-auto" style="margin-top: 20px; text-align: center;">
+                <div class="col-lg-6 col-md-7 mx-auto" style="text-align: center;">
                     <p class="text-center">Website Desa Tabbinjai adalah usaha menggambarkan secara utuh tentang kondisi
                         Desa. Data-data yang disusun diambil dari semua data yang tersedia dan bisa didapatkan.</p>
                     <a class="btn btn-kontak" href="http://">

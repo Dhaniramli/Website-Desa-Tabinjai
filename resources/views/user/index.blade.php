@@ -20,22 +20,26 @@
 <div class="container">
     <div class="row visi-misi">
         <div class="col-lg-6 home-3">
-            <div class="visi-logo">
-                <img src="{{ asset('images/Frame 40.png') }}" alt="">
-            </div>
-            <div class="visi-title">
-                <h1>Visi</h1>
+            <div class="logo-x-visi">
+                <div class="visi-logo">
+                    <img src="{{ asset('images/Frame 40.png') }}" alt="">
+                </div>
+                <div class="visi-title">
+                    <h1>Visi</h1>
+                </div>
             </div>
             <div class="visi-content">
                 {!! $visi->body !!}
             </div>
         </div>
         <div class="col-lg-6 home-4">
-            <div class="misi-logo">
-                <img src="{{ asset('images/Frame 39.png') }}" alt="">
-            </div>
-            <div class="misi-title">
-                <h1>Misi</h1>
+            <div class="logo-x-misi">
+                <div class="misi-logo">
+                    <img src="{{ asset('images/Frame 39.png') }}" alt="">
+                </div>
+                <div class="misi-title">
+                    <h1>Misi</h1>
+                </div>
             </div>
             <div class="misi-content">
                 {!! $misi->body !!}
