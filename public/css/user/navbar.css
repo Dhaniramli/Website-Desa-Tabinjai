@@ -29,7 +29,7 @@
     color: #009D4C;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .navbar .navbar-nav{
         margin-top: 20px;
         text-align: center;

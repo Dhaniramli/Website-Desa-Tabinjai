@@ -44,11 +44,13 @@
 
 @media (max-width: 991px) {
     .home-1 {
+        text-align: center;
         height: 80vh;
     }
 
     .home-2 {
         height: 80vh;
+        margin-top: 100px;
     }
 }
 
@@ -59,17 +61,18 @@
         padding: 10px;
         margin-top: -50px;
     }
-    
+
     .home-2 {
         margin-top: 100px;
         text-align: center;
-        height: 40vh;
+        height: 50vh;
     }
 
     .home-1 h1 {
         font-weight: 700;
         font-size: 30px;
     }
+
     .home-1 p {
         font-size: 15px;
     }
@@ -108,33 +111,46 @@
     color: #333;
 }
 
-@media (max-width: 768px) {
-    .home-3{
-        margin-bottom: 50px;
+@media (max-width: 991px) {
+    .misi-logo{
+        margin-top: 40px;
     }
-    .visi-logo{
+}
+@media (max-width: 768px) {
+    .home-3 {
+        margin-bottom: 30px;
+    }
+
+    .visi-logo {
         margin-top: -40px;
         text-align: center;
     }
-    .visi-title{
+
+    .visi-title {
         text-align: center;
     }
-    .visi-title h1{
+
+    .visi-title h1 {
         font-size: 30px;
     }
-    .misi-logo{
+
+    .misi-logo {
         text-align: center;
     }
-    .misi-title{
+
+    .misi-title {
         text-align: center;
     }
-    .misi-title h1{
+
+    .misi-title h1 {
         font-size: 30px;
     }
-    .visi-content{
+
+    .visi-content {
         font-size: 15px;
     }
-    .misi-content{
+
+    .misi-content {
         font-size: 15px;
     }
 }
@@ -204,24 +220,148 @@
 }
 
 @media (max-width: 768px) {
-    .pejabat-desa h1{
+    .pejabat-desa h1 {
         font-size: 30px;
     }
+
     .pejabat-desa .card-title {
         font-size: 17px;
         font-weight: 600;
         color: white;
     }
-    
+
     .pejabat-desa .card-subtitle {
         margin-top: 10px;
         font-size: 12px;
         font-weight: 300;
         color: white;
     }
+
     .pejabat-desa {
         height: 640px;
         padding-top: 47px;
     }
 }
+
 /* AKHIR PEJABAT */
+
+/* BERITA */
+.berita {
+    margin-top: 136px;
+    margin-bottom: 100px;
+}
+
+.berita h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #04C26D;
+    margin-bottom: 50px;
+}
+
+.berita .berita-1 {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+    background-color: transparent;
+    border: none;
+}
+
+.berita .card-img{
+    width: 100%;
+    height: 350px;
+}
+
+.berita .card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.berita .card-subimg{
+    width: 100%;
+    height: 170px;
+}
+
+.berita .card-subimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.berita .title-1 {
+    background-color: #04C26D;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.berita .title-2 {
+    background-color: transparent;
+    color: black;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.berita .title-2 .date {
+    margin-left: 10px;
+}
+
+.berita .card-title {
+    margin-top: 16px;
+    margin-bottom: 26px;
+}
+
+.berita h2 {
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+}
+
+.berita p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #495057;
+}
+
+.berita .lengkapnya {
+    color: #009D4C;
+    font-size: 16px;
+}
+
+@media (max-width: 991px) {
+    .berita .card-img{
+        width: 100%;
+        height: 400px;
+    }
+    .berita .card-subimg{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .berita h1{
+        font-size: 30px;
+    }
+    .berita .card-img{
+        width: 100%;
+        height: 260px;
+    }
+    .berita .card-subimg{
+        width: 100%;
+        height: 260px;
+    }
+}
+/* AKHIR BERITA */
