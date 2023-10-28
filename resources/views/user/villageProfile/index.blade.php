@@ -23,7 +23,7 @@
     <h1 class="text-center">Sejarah Desa Tabbinjai</h1>
 
     <div class="container sejarah-2">
-        <div class="card card-sejarah">
+        <div class="card shadow card-sejarah">
             {!! substr($sejarah->body, 0, 1048) !!}
             <a href="/profil-desa/sejarah" class="selengkapnya">Lihat selengkapnya...</a>
         </div>

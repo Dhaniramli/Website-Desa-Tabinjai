@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="/css/user/carousel.css">
 <link rel="stylesheet" href="/css/user/villageProfile.css">
 <link rel="stylesheet" href="/css/user/government.css">
+<link rel="stylesheet" href="/css/user/villageData.css">
 
 <!-- CSS FLICKITY-->
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">

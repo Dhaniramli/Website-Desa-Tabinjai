@@ -20,10 +20,10 @@
                     <a class="nav-link {{ Request::is('pemerintahan*') ? 'active' : ''}}" href="{{ Route('index-pemerintahan') }}">Pemerintahan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Produk Desa</a>
+                    <a class="nav-link {{ Request::is('produk-desa*') ? 'active' : ''}}" href="{{ Route('index-produkDesa') }}">Produk Desa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Data Desa</a>
+                    <a class="nav-link {{ Request::is('data-desa*') ? 'active' : ''}}" href="{{ Route('index-dataDesa') }}">Data Desa</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Berita</a>

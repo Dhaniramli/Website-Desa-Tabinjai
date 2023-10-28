@@ -1,0 +1,83 @@
+.data-desa-1 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.data-desa-1 .content-data {
+    min-height: 30vh;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: none;
+}
+
+.data-desa-1 .choice-data {
+    min-height: 50vh;
+    background-color: white;
+    padding: 10px;
+}
+
+.data-desa-1 .content-data h1 {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.data-desa-1 .content-data .tabel-head {
+    background-color: #009D4C;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.data-desa-1 .content-data .tabel-foot {
+    border-top: 1px solid #009D4C;
+    color: #009D4C;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.data-desa-1 table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-desa-1 th,
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+.data-desa-1 .form-select option:checked {
+    background-color: #009D4C;
+    color: white;
+}
+
+.data-desa-1 .form-select option:hover {
+    background-color: #04C292;
+    color: black;
+}
+
+@media (max-width: 991px) {
+    .data-desa-1 .content-data {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .data-desa-1 .content-data {
+        margin-top: 30px;
+    }
+
+    .data-desa-1 .content-data table {
+        font-size: 13px;
+    }
+
+    .data-desa-1 .content-data .tabel-head {
+        font-size: 14px;
+    }
+}
