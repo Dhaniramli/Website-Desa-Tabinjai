@@ -1,3 +1,4 @@
+/* CONTENT AWAL */
 .home-1 {
     display: flex;
     flex-direction: column;
@@ -5,6 +6,7 @@
     align-items: center;
     height: 100vh;
 }
+
 .home-2 {
     display: flex;
     flex-direction: column;
@@ -13,107 +15,136 @@
     height: 100vh;
 }
 
-.home-1 h1{
+.home-1 h1 {
     font-weight: 700;
     font-size: 50px;
 }
+
 .home-1 .green-text {
     color: #04C26D;
 }
 
-.home-1 p{
+.home-1 p {
     font-size: 20px;
 }
+
 .home-1 .bold-text {
     font-weight: 600;
 }
 
-.image-home-2{
-    width: 480px;
-    height: 480px;
+.image-home-2 {
+    padding: 30px;
 }
-.image-home-2 img{
+
+.image-home-2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 @media (max-width: 991px) {
-    .home-1{
+    .home-1 {
         height: 80vh;
     }
-    .home-2{
+
+    .home-2 {
         height: 80vh;
     }
 }
 
+@media (max-width: 768px) {
+    .home-1 {
+        text-align: center;
+        height: 50vh;
+    }
+    
+    .home-2 {
+        margin-top: 70px;
+        text-align: center;
+        height: 40vh;
+    }
+
+    .home-1 h1 {
+        font-weight: 700;
+        font-size: 30px;
+    }
+}
+
+/* AKHIR CONTENT AWAL */
+
 /* VISI MISI */
-.visi-misi{
+.visi-misi {
     margin-bottom: 136px;
 }
-.visi-title{
+
+.visi-title {
     margin-top: 40px;
     margin-bottom: 28px;
     color: #009D4C;
     font-size: 46;
     font-weight: 600;
 }
-.misi-title{
+
+.misi-title {
     margin-top: 40px;
     margin-bottom: 28px;
     color: #009D4C;
     font-size: 46;
     font-weight: 600;
 }
+
 .visi-content {
     font-size: 20px;
     color: #333;
 }
+
 .misi-content {
     font-size: 20px;
     color: #333;
 }
+
 /* AKHIR VISI MISI */
 
 /* PEJABAT */
-.pejabat-desa{
+.pejabat-desa {
     height: 680px;
     padding-top: 47px;
 }
 
-.pejabat-desa h1{
+.pejabat-desa h1 {
     font-size: 40px;
     font-weight: 600;
     color: white;
     margin-bottom: 50px;
 }
 
-.pejabat-desa .card{
+.pejabat-desa .card {
     background-color: transparent;
     border: none;
     margin: 0 .3em;
 }
 
-.pejabat-desa .card-title{
+.pejabat-desa .card-title {
     font-size: 20px;
     font-weight: 600;
     color: white;
 }
 
-.pejabat-desa .card-subtitle{
+.pejabat-desa .card-subtitle {
     margin-top: 10px;
     font-size: 15px;
     font-weight: 300;
     color: white;
 }
 
-.pejabat-desa .img2{
+.pejabat-desa .img2 {
     margin-top: 130px;
     background-color: #04C26D;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
-.pejabat-desa .img2 img{
+
+.pejabat-desa .img2 img {
     position: relative;
     display: block;
     margin-left: auto;
@@ -126,7 +157,7 @@
     margin-top: -130px;
 }
 
-.pejabat-desa .content-text{
+.pejabat-desa .content-text {
     padding-top: 20px;
     padding-bottom: 50px;
     text-align: center;
@@ -135,4 +166,5 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
 /* AKHIR PEJABAT */
