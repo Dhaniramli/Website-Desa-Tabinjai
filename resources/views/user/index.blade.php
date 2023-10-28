@@ -87,9 +87,9 @@
                 </div>
                 <div class="card-body p-0">
                     <div class="card-title d-flex">
-                        <div class="title-1">
+                        {{-- <div class="title-1">
                             Seminar Desa
-                        </div>
+                        </div> --}}
                         <div class="title-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-calendar4" viewBox="0 0 16 16">
@@ -117,9 +117,9 @@
                         </div>
                         <div class="card-body p-0">
                             <div class="card-title d-flex">
-                                <div class="title-1">
+                                {{-- <div class="title-1">
                                     Seminar Desa
-                                </div>
+                                </div> --}}
                                 <div class="title-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-calendar4" viewBox="0 0 16 16">

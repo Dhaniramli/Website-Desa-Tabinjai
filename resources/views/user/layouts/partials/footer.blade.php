@@ -17,7 +17,7 @@
             </div>
             <div class="row" style="margin-top: 20px;">
                 <div class="col-lg-4 col-md-4 bawah-satu">
-                    <h5>© 2023 HMJ. All Rights Reserved.</h5>
+                    <h5>© 2023 HMJ-SI. All Rights Reserved.</h5>
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
                     <h5>LOGO</h5>
