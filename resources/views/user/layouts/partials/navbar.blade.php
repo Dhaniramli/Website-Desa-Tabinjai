@@ -26,7 +26,7 @@
                     <a class="nav-link {{ Request::is('data-desa*') ? 'active' : ''}}" href="{{ Route('index-dataDesa') }}">Data Desa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Berita</a>
+                    <a class="nav-link {{ Request::is('berita*') ? 'active' : ''}}" href="{{ Route('index-berita') }}">Berita</a>
                 </li>
             </ul>
         </div>

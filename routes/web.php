@@ -16,6 +16,7 @@ use App\Http\Controllers\Admin\TotalPopulationController;
 use App\Http\Controllers\Admin\VissionController;
 use App\Http\Controllers\User\GovernmentController;
 use App\Http\Controllers\User\HomeController;
+use App\Http\Controllers\User\NewsController;
 use App\Http\Controllers\User\VillageDataController;
 use App\Http\Controllers\User\VillageProfileController;
 use Illuminate\Support\Facades\Route;
@@ -51,6 +52,8 @@ Route::get('/produk-desa', [VillageDataController::class, 'index'])->name('index
 
 Route::get('/data-desa', [VillageDataController::class, 'index'])->name('index-dataDesa');
 
+Route::get('/berita', [NewsController::class, 'index'])->name('index-berita');
+Route::get('/berita/{slug}', [NewsController::class, 'show'])->name('show-berita');
 
 
 

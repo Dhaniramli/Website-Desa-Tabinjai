@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="/css/user/villageProfile.css">
 <link rel="stylesheet" href="/css/user/government.css">
 <link rel="stylesheet" href="/css/user/villageData.css">
+<link rel="stylesheet" href="/css/user/news.css">
 
 <!-- CSS FLICKITY-->
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">

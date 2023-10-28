@@ -1,0 +1,157 @@
+/* ALL BERITA */
+.berita-all-1{
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.berita-all-2{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.berita-all-1 h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #009D4C;
+}
+
+.berita-all-1 .berita-1 {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+    background-color: transparent;
+    border: none;
+}
+
+.berita-all-1 .card-img{
+    width: 100%;
+    height: 230px;
+}
+
+.berita-all-1 .card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.berita-all-1 .card-subimg{
+    width: 100%;
+    height: 170px;
+}
+
+.berita-all-1 .card-subimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.berita-all-1 .title-1 {
+    background-color: #04C26D;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.berita-all-1 .title-2 {
+    background-color: transparent;
+    color: black;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.berita-all-1 .title-2 .date {
+    margin-left: 10px;
+}
+
+.berita-all-1 .card-title {
+    margin-top: 16px;
+    margin-bottom: 26px;
+}
+
+.berita-all-1 h2 {
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+}
+
+.berita-all-1 p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #495057;
+}
+
+.berita-all-1 .lengkapnya {
+    color: #009D4C;
+    font-size: 16px;
+}
+/* AKHIR ALL BERITA */
+
+/* SHOW BERITA */
+.show-berita{
+    min-height: 100vh;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.show-berita .show-img{
+    width: 100%;
+    height: 500px;
+    background-color: #009D4C;
+}
+
+.show-berita img{
+    width: 100%;
+    height: 100%;
+}
+
+.title-show-berita{
+    padding: 10px;
+}
+.title-show-berita h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.title-show-berita-2{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    color: black;
+}
+
+.title-show-berita-2 .date{
+    margin-left: 10px;
+}
+
+@media (max-width: 991px) {
+    .show-berita .show-img{
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .show-berita .show-img{
+        height: 280px;
+    }
+    .title-show-berita h2{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .title-show-berita-2{
+        font-size: 11px;
+    }
+}
+/* AKHIR SHOW BERITA */
