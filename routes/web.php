@@ -15,6 +15,7 @@ use App\Http\Controllers\Admin\MissionController;
 use App\Http\Controllers\Admin\TotalPopulationController;
 use App\Http\Controllers\Admin\VissionController;
 use App\Http\Controllers\User\HomeController;
+use App\Http\Controllers\User\VillageProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,6 +40,7 @@ Route::get('/profil_desa', function () {
 });
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/profil-desa', [VillageProfileController::class, 'index'])->name('profilDesa');
 
 
 

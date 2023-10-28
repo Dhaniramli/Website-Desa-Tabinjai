@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="/css/user/footer.css">
 <link rel="stylesheet" href="/css/user/home.css">
 <link rel="stylesheet" href="/css/user/carousel.css">
+<link rel="stylesheet" href="/css/user/villageProfile.css">
 
 <!-- CSS FLICKITY-->
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
