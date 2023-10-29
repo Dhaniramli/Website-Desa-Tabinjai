@@ -28,11 +28,16 @@
                     <h1>Visi</h1>
                 </div>
             </div>
-            <div class="visi-content">
-                @if ($visi)
-                {!! $visi->body !!}
-                @endif
+            @if (!$visi)
+            <div class="no-data-pemerintahan">
+                <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+                <h5>Tidak ada data!</h5>
             </div>
+            @else
+            <div class="visi-content">
+                {!! $visi->body !!}
+            </div>
+            @endif
         </div>
         <div class="col-lg-6 home-4">
             <div class="logo-x-misi">
@@ -43,11 +48,16 @@
                     <h1>Misi</h1>
                 </div>
             </div>
-            <div class="misi-content">
-                @if ($misi)
-                {!! $misi->body !!}
-                @endif
+            @if (!$misi)
+            <div class="no-data-pemerintahan">
+                <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+                <h5>Tidak ada data!</h5>
             </div>
+            @else
+            <div class="misi-content">
+                {!! $misi->body !!}
+            </div>
+            @endif
         </div>
     </div>
 </div>
@@ -57,9 +67,14 @@
     <div class="container pejabat-desa">
         <h1 class="text-center">Pejabat Desa</h1>
 
+        @if (!$pejabatAdministrasi->count())
+        <div class="no-data-pemerintahan">
+            <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+            <h5>Tidak ada data!</h5>
+        </div>
+        @else
         <div class="carousel-main carousel-galeri"
             data-flickity='{"autoPlay": 1500, "groupCells": true , "prevNextButtons": false, "pageDots": true}'>
-            @if ($pejabatAdministrasi->count())
             @foreach ($pejabatAdministrasi as $pejabat)
             <div class="carousel-cell carousel-inner-gallery">
                 <div class="overlay">
@@ -73,22 +88,21 @@
                 </div>
             </div>
             @endforeach
-            @else
-            <div class="parent-container">
-                <div class="not-found"
-                    style="height: 200px; display: flex; align-items: center; justify-content: center;">
-                    <p class="text-center fs-4">Not found!</p>
-                </div>
-            </div>
-            @endif
         </div>
+        @endif
     </div>
 </div>
 
 <div class="container berita">
     <h1 class="text-center">Berita</h1>
+
+    @if (!$beritas->count())
+    <div class="no-data-pemerintahan">
+        <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+        <h5>Tidak ada data!</h5>
+    </div>
+    @else
     <div class="row">
-        @if ($beritas->count())
         <div class="col-lg-6">
             <div class="card berita-1">
                 <div class="card-img">
@@ -116,7 +130,7 @@
                 </div>
             </div>
         </div>
-        @endif
+
         <div class="col-lg-6">
             <div class="row">
                 @foreach ($beritas->skip(1) as $berita)
@@ -150,5 +164,6 @@
             </div>
         </div>
     </div>
+    @endif
 </div>
 @endsection

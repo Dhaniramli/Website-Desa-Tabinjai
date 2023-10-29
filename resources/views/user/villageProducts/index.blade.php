@@ -1,6 +1,14 @@
 @extends('user.layouts.main')
 
 @section('content')
+@if (!$produks->count())
+<div class="container no-data-1">
+    <div class="no-data-2">
+        <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+        <h5>Tidak ada data!</h5>
+    </div>
+</div>
+@else
 <div class="container produk-desa-1">
     <h1 class="text-center">Produk Pangan</h1>
 
@@ -28,4 +36,6 @@
         {{ $produks->links('pagination::bootstrap-4') }}
     </div>
 </div>
+@endif
+
 @endsection

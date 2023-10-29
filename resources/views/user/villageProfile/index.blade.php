@@ -25,12 +25,19 @@
     style="background-image: url('{{ asset('images/bg-sejarah.png') }}'); background-size: cover;">
     <h1 class="text-center">Sejarah Desa Tabbinjai</h1>
 
+    @if (!$sejarah)
+    <div class="no-data-pemerintahan">
+        <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+        <h5>Tidak ada data!</h5>
+    </div>
+    @else
     <div class="container sejarah-2">
         <div class="card shadow card-sejarah">
             {!! substr($sejarah->body, 0, 1048) !!}
             <a href="/profil-desa/sejarah" class="selengkapnya">Lihat selengkapnya...</a>
         </div>
     </div>
+    @endif
 </div>
 
 {{-- VISI MISI --}}
@@ -45,9 +52,16 @@
                     <h1>Visi</h1>
                 </div>
             </div>
+            @if (!$visi)
+            <div class="no-data-pemerintahan">
+                <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+                <h5>Tidak ada data!</h5>
+            </div>
+            @else
             <div class="visi-content">
                 {!! $visi->body !!}
             </div>
+            @endif
         </div>
         <div class="col-lg-6 home-4">
             <div class="logo-x-visi">
@@ -58,9 +72,16 @@
                     <h1>Misi</h1>
                 </div>
             </div>
+            @if (!$misi)
+            <div class="no-data-pemerintahan">
+                <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+                <h5>Tidak ada data!</h5>
+            </div>
+            @else
             <div class="misi-content">
                 {!! $misi->body !!}
             </div>
+            @endif
         </div>
     </div>
 </div>

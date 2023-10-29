@@ -1,12 +1,4 @@
 /* ALL BERITA */
-.no-data-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Menyesuaikan tinggi div dengan tinggi layar penuh */
-}
-
 .berita-all-1{
     min-height: 100vh;
     padding-top: 100px;

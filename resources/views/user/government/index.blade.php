@@ -17,6 +17,12 @@
     <div class="container struktur-organisasi-2">
         <h1>Struktur Organisasi</h1>
 
+        @if (!$kepalaDesa)
+        <div class="no-data-pemerintahan">
+            <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+            <h5>Tidak ada data!</h5>
+        </div>
+        @else
         <div class="row pejabat-desa-1 align-content-center">
             <div class="col-lg-4 col-md-6 mx-auto">
                 <div class="card">
@@ -28,6 +34,14 @@
                 </div>
             </div>
         </div>
+        @endif
+
+        @if (!$pejabatAdmis->count())
+        <div class="no-data-pemerintahan">
+            <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+            <h5>Tidak ada data!</h5>
+        </div>
+        @else
         <div class="row pejabat-desa-2 align-content-center">
             @foreach ($pejabatAdmis->skip(1)->take(2) as $pejabat2)
             <div class="col-lg-4 col-md-6 mx-auto">
@@ -41,6 +55,8 @@
             </div>
             @endforeach
         </div>
+        @endif
+
         <div class="row pejabat-desa-3 align-content-center">
             @foreach ($pejabatAdmis->skip(3) as $pejabat3)
             <div class="col-lg-4 col-md-6 mx-auto">
@@ -62,8 +78,16 @@
     <div class="container bpd-2">
         <h1 class="text-center">BPD</h1>
 
+        @if (!$pejabatBpds->count())
+        <div class="container no-data-pemerintahan">
+            <div class="no-data-2">
+                <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+                <h5>Tidak ada data!</h5>
+            </div>
+        </div>
+        @else
         <div class="row bpd-3 align-content-center">
-            @foreach ($pejabatAdmis->skip(3) as $pejabat3)
+            @foreach ($pejabatBpds as $pejabat3)
             <div class="col-lg-4 col-md-6 mx-auto">
                 <div class="card card-pejabat">
                     <div class="img2"><img src="{{ asset('storage/' . $pejabat3->image) }}" alt="..."></div>
@@ -75,6 +99,9 @@
             </div>
             @endforeach
         </div>
+        @endif
     </div>
 </div>
+
+{{-- @endif --}}
 @endsection

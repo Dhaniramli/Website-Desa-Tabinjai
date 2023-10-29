@@ -1,6 +1,14 @@
 @extends('user.layouts.main')
 
 @section('content')
+@if (!$gender->count() && $totalGenderAll === 0)
+<div class="container no-data-1">
+    <div class="no-data-2">
+        <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+        <h5>Tidak ada data!</h5>
+    </div>
+</div>
+@else
 <div class="container data-desa-1">
     <div class="row">
         <div class="col-lg-3 col-md-3">
@@ -154,6 +162,7 @@
         </div>
     </div>
 </div>
+@endif
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 

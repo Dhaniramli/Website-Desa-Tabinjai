@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="/css/user/news.css">
 <link rel="stylesheet" href="/css/user/product.css">
 <link rel="stylesheet" href="/css/user/tour.css">
+<link rel="stylesheet" href="/css/user/noData.css">
 
 <!-- CSS FLICKITY-->
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
