@@ -1,37 +1,64 @@
-.navbar{
+.navbar {
     background-color: white;
 }
 
-.navbar .logo a{
+.navbar .logo a {
     text-decoration: none;
     color: #009D4C;
     font-size: 24px;
     font-weight: 600;
 }
 
-.navbar .logo h6{
+.navbar .logo h6 {
     color: #495057;
     font-size: 12px;
     font-weight: 400;
 }
 
-.navbar-nav .nav-link{
+.navbar-nav .nav-link {
     font-size: 18px;
     color: black;
 }
-.navbar-nav .nav-link:hover{
+
+.navbar-nav .nav-link:hover {
     text-shadow: 2px 2px 4px rgba(0, 157, 76, 0.4);
     color: gray;
 }
+
 .navbar-nav .nav-link.active {
     font-weight: 600;
     font-size: 18px;
     color: #009D4C;
 }
 
+.navbar .dropdown .dropdown-item.active {
+    background-color: #009D4C;
+}
+
+.navbar .dropdown .dropdown-item:hover {
+    background-color: #6fd19e;
+}
+
+.navbar .dropdown .dropdown-menu {
+    padding: 0px;
+    border-radius: 0px;
+}
+
+
 @media (max-width: 991px) {
-    .navbar .navbar-nav{
+    .navbar .navbar-nav {
         margin-top: 20px;
         text-align: center;
+    }
+
+    .navbar .dropdown .dropdown-item {
+        text-align: center;
+    }
+
+    .navbar .dropdown .dropdown-menu {
+        width: 50%;
+        padding: 0px;
+        border-radius: 0px;
+        margin: 0 auto;
     }
 }

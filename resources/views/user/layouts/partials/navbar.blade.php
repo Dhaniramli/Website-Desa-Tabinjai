@@ -14,19 +14,37 @@
                     <a class="nav-link {{ Request::is('/*') ? 'active' : ''}}" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('profil-desa*') ? 'active' : ''}}" href="{{ Route('profilDesa') }}">Profil Desa</a>
+                    <a class="nav-link {{ Request::is('profil-desa*') ? 'active' : ''}}"
+                        href="{{ Route('profilDesa') }}">Profil Desa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('pemerintahan*') ? 'active' : ''}}" href="{{ Route('index-pemerintahan') }}">Pemerintahan</a>
+                    <a class="nav-link {{ Request::is('pemerintahan*') ? 'active' : ''}}"
+                        href="{{ Route('index-pemerintahan') }}">Pemerintahan</a>
+                </li>
+
+                {{-- <li class="nav-item">
+                    <a class="nav-link {{ Request::is('produk-desa*') ? 'active' : ''}}"
+                        href="{{ Route('index-produkDesa') }}">Produk Desa</a>
+                </li> --}}
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link {{ Request::is('produk-pangan*') || Request::is('produk-wisata*')  ? 'active' : ''}}" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Produk Desa
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item {{ Request::is('produk-pangan*')  ? 'active' : ''}}" href="{{ Route('index-produkDesa') }}">Produk Pangan</a></li>
+                        <li><a class="dropdown-item {{ Request::is('produk-wisata*')  ? 'active' : ''}}" href="{{ Route('index-wisata') }}">Produk Wisata</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link {{ Request::is('data-desa*') ? 'active' : ''}}"
+                        href="{{ Route('index-dataDesa') }}">Data Desa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('produk-desa*') ? 'active' : ''}}" href="{{ Route('index-produkDesa') }}">Produk Desa</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ Request::is('data-desa*') ? 'active' : ''}}" href="{{ Route('index-dataDesa') }}">Data Desa</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ Request::is('berita*') ? 'active' : ''}}" href="{{ Route('index-berita') }}">Berita</a>
+                    <a class="nav-link {{ Request::is('berita*') ? 'active' : ''}}"
+                        href="{{ Route('index-berita') }}">Berita</a>
                 </li>
             </ul>
         </div>

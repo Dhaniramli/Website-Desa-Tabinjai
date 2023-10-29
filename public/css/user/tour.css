@@ -1,0 +1,30 @@
+.produk-desa-2 .card-subtitle{
+    margin-top: 1px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.produk-desa-2 .lokasi{
+    margin-bottom: 10px;
+}
+
+.produk-desa-2 .lokasi svg{
+    color: #009D4C;
+    width: 16px;
+    height: 16px;
+}
+
+.show-wisata .lokasi svg{
+    color: #009D4C;
+    width: 30px;
+    height: 30px;
+}
+
+.show-wisata .card-subtitle{
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.show-wisata .lokasi{
+    margin-bottom: 10px;
+}

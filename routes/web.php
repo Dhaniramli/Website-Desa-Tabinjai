@@ -19,6 +19,7 @@ use App\Http\Controllers\Admin\VissionController;
 use App\Http\Controllers\User\GovernmentController;
 use App\Http\Controllers\User\HomeController;
 use App\Http\Controllers\User\NewsController;
+use App\Http\Controllers\User\TourController;
 use App\Http\Controllers\User\VillageDataController;
 use App\Http\Controllers\User\VillageProductsController;
 use App\Http\Controllers\User\VillageProfileController;
@@ -51,8 +52,11 @@ Route::get('/profil-desa/sejarah', [VillageProfileController::class, 'showSejara
 
 Route::get('/pemerintahan', [GovernmentController::class, 'index'])->name('index-pemerintahan');
 
-Route::get('/produk-desa', [VillageProductsController::class, 'index'])->name('index-produkDesa');
-Route::get('/produk-desa/{id}', [VillageProductsController::class, 'show'])->name('show-produk');
+Route::get('/produk-pangan', [VillageProductsController::class, 'index'])->name('index-produkDesa');
+Route::get('/produk-pangan/{id}', [VillageProductsController::class, 'show'])->name('show-produk');
+
+Route::get('/produk-wisata', [TourController::class, 'index'])->name('index-wisata');
+Route::get('/produk-wisata/{id}', [TourController::class, 'show'])->name('show-wisata');
 
 Route::get('/data-desa', [VillageDataController::class, 'index'])->name('index-dataDesa');
 
