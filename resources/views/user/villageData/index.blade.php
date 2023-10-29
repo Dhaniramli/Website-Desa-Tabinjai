@@ -1,14 +1,6 @@
 @extends('user.layouts.main')
 
 @section('content')
-@if (!$gender->count() && $totalGenderAll === 0)
-<div class="container no-data-1">
-    <div class="no-data-2">
-        <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
-        <h5>Tidak ada data!</h5>
-    </div>
-</div>
-@else
 <div class="container data-desa-1">
     <div class="row">
         <div class="col-lg-3 col-md-3">
@@ -25,6 +17,7 @@
                 <h1 class="text-center">Demografi Penduduk</h1>
                 <div class="card border">
                     {{-- JENIS KELAMIN --}}
+
                     <table id="table-1">
                         <thead>
                             <tr class="tabel-head">
@@ -34,6 +27,11 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @if (!$gender->count() && $totalGenderAll === 0)
+                            <tr>
+                                <td colspan="3">Tidak ada data!</td>
+                            </tr>
+                            @else
                             @foreach ($gender as $item)
                             <tr>
                                 <td>{{ $item->gender }}</td>
@@ -41,7 +39,9 @@
                                 <td>{{ number_format(($item->total / $totalGenderAll) * 100, 1)}} &#40;%&#41;</td>
                             </tr>
                             @endforeach
+                            @endif
                         </tbody>
+                        @if ($gender->count() && $totalGenderAll > 0)
                         <tfoot>
                             <tr class="tabel-foot">
                                 <td>Total</td>
@@ -49,7 +49,9 @@
                                 <td>{{ number_format(($totalGenderAll / $totalGenderAll) * 100, 1)}} &#40;%&#41;</td>
                             </tr>
                         </tfoot>
+                        @endif
                     </table>
+
                     {{-- UMUR --}}
                     <table id="table-2" style="display: none">
                         <thead>
@@ -60,6 +62,11 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @if (!$umur->count() && $totalumurAll === 0)
+                            <tr>
+                                <td colspan="3">Tidak ada data!</td>
+                            </tr>
+                            @else
                             @foreach ($umur as $item)
                             <tr>
                                 <td>{{ $item->age }}</td>
@@ -67,7 +74,9 @@
                                 <td>{{ number_format(($item->total / $totalumurAll) * 100, 1)}} &#40;%&#41;</td>
                             </tr>
                             @endforeach
+                            @endif
                         </tbody>
+                        @if ($gender->count() && $totalGenderAll > 0)
                         <tfoot>
                             <tr class="tabel-foot">
                                 <td>Total</td>
@@ -75,6 +84,7 @@
                                 <td>{{ number_format(($totalumurAll / $totalumurAll) * 100, 1)}} &#40;%&#41;</td>
                             </tr>
                         </tfoot>
+                        @endif
                     </table>
                     {{-- PENDIDIKAN --}}
                     <table id="table-3" style="display: none">
@@ -86,6 +96,11 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @if (!$pendidikan->count() && $totalPendidikanAll === 0)
+                            <tr>
+                                <td colspan="3">Tidak ada data!</td>
+                            </tr>
+                            @else
                             @foreach ($pendidikan as $item)
                             <tr>
                                 <td>{{ $item->education }}</td>
@@ -93,7 +108,9 @@
                                 <td>{{ number_format(($item->total / $totalPendidikanAll) * 100, 1)}} &#40;%&#41;</td>
                             </tr>
                             @endforeach
+                            @endif
                         </tbody>
+                        @if ($pendidikan->count() && $totalPendidikanAll > 0)
                         <tfoot>
                             <tr class="tabel-foot">
                                 <td>Total</td>
@@ -102,7 +119,9 @@
                                 </td>
                             </tr>
                         </tfoot>
+                        @endif
                     </table>
+
                     {{-- PEKERJAAN --}}
                     <table id="table-4" style="display: none">
                         <thead>
@@ -113,6 +132,11 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @if (!$pekerjaan->count() && $totalPekerjaanAll === 0)
+                            <tr>
+                                <td colspan="3">Tidak ada data!</td>
+                            </tr>
+                            @else
                             @foreach ($pekerjaan as $item)
                             <tr>
                                 <td>{{ $item->work }}</td>
@@ -120,7 +144,9 @@
                                 <td>{{ number_format(($item->total / $totalPekerjaanAll) * 100, 1)}} &#40;%&#41;</td>
                             </tr>
                             @endforeach
+                            @endif
                         </tbody>
+                        @if ($pekerjaan->count() && $totalPekerjaanAll > 0)
                         <tfoot>
                             <tr class="tabel-foot">
                                 <td>Total</td>
@@ -129,7 +155,9 @@
                                 </td>
                             </tr>
                         </tfoot>
+                        @endif
                     </table>
+
                     {{-- PENGHASILAN --}}
                     <table id="table-5" style="display: none">
                         <thead>
@@ -140,6 +168,11 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @if (!$penghasilan->count() && $totalPenghasilanAll === 0)
+                            <tr>
+                                <td colspan="3">Tidak ada data!</td>
+                            </tr>
+                            @else
                             @foreach ($penghasilan as $item)
                             <tr>
                                 <td>{{ $item->income }}</td>
@@ -147,7 +180,9 @@
                                 <td>{{ number_format(($item->total / $totalPenghasilanAll) * 100, 1)}} &#40;%&#41;</td>
                             </tr>
                             @endforeach
+                            @endif
                         </tbody>
+                        @if ($penghasilan->count() && $totalPenghasilanAll > 0)
                         <tfoot>
                             <tr class="tabel-foot">
                                 <td>Total</td>
@@ -156,13 +191,13 @@
                                     &#40;%&#41;</td>
                             </tr>
                         </tfoot>
+                        @endif
                     </table>
                 </div>
             </div>
         </div>
     </div>
 </div>
-@endif
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
