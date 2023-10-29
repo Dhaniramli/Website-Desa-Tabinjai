@@ -19,6 +19,7 @@ use App\Http\Controllers\User\GovernmentController;
 use App\Http\Controllers\User\HomeController;
 use App\Http\Controllers\User\NewsController;
 use App\Http\Controllers\User\VillageDataController;
+use App\Http\Controllers\User\VillageProductsController;
 use App\Http\Controllers\User\VillageProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -49,7 +50,8 @@ Route::get('/profil-desa/sejarah', [VillageProfileController::class, 'showSejara
 
 Route::get('/pemerintahan', [GovernmentController::class, 'index'])->name('index-pemerintahan');
 
-Route::get('/produk-desa', [VillageDataController::class, 'index'])->name('index-produkDesa');
+Route::get('/produk-desa', [VillageProductsController::class, 'index'])->name('index-produkDesa');
+Route::get('/produk-desa/{id}', [VillageProductsController::class, 'show'])->name('show-produk');
 
 Route::get('/data-desa', [VillageDataController::class, 'index'])->name('index-dataDesa');
 

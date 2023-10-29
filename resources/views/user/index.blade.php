@@ -29,7 +29,9 @@
                 </div>
             </div>
             <div class="visi-content">
+                @if ($visi)
                 {!! $visi->body !!}
+                @endif
             </div>
         </div>
         <div class="col-lg-6 home-4">
@@ -42,7 +44,9 @@
                 </div>
             </div>
             <div class="misi-content">
+                @if ($misi)
                 {!! $misi->body !!}
+                @endif
             </div>
         </div>
     </div>
@@ -84,6 +88,7 @@
 <div class="container berita">
     <h1 class="text-center">Berita</h1>
     <div class="row">
+        @if ($beritas->count())
         <div class="col-lg-6">
             <div class="card berita-1">
                 <div class="card-img">
@@ -111,6 +116,7 @@
                 </div>
             </div>
         </div>
+        @endif
         <div class="col-lg-6">
             <div class="row">
                 @foreach ($beritas->skip(1) as $berita)
