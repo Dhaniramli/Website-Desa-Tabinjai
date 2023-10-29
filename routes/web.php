@@ -13,6 +13,7 @@ use App\Http\Controllers\Admin\HalmetOfficeController;
 use App\Http\Controllers\Admin\HistoryController;
 use App\Http\Controllers\Admin\MissionController;
 use App\Http\Controllers\Admin\TotalPopulationController;
+use App\Http\Controllers\Admin\VillageProductsController as AdminVillageProductsController;
 use App\Http\Controllers\Admin\VissionController;
 use App\Http\Controllers\User\GovernmentController;
 use App\Http\Controllers\User\HomeController;
@@ -70,6 +71,9 @@ Route::put('/admin/berita/update/{slug}', [BlogController::class, 'update']);
 Route::get('/admin/berita/hapus/{slug}', [BlogController::class, 'destroy']);
 Route::get('/admin/berita/show/{slug}', [BlogController::class, 'show']);
 Route::get('/admin/berita/checkSlug', [BlogController::class, 'checkSlug']);
+
+Route::resource('/admin/produk', AdminVillageProductsController::class);
+Route::get('/admin/produk/delete/{id}', [AdminVillageProductsController::class, 'destroy']);
 
 Route::resource('/admin/sejarah', HistoryController::class);
 Route::get('/admin/sejarah/delete/{id}', [HistoryController::class, 'destroy']);

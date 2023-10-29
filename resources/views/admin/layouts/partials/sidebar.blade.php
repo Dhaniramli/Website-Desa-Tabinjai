@@ -42,6 +42,12 @@
             <span>Sejarah</span></a>
     </li>
 
+    <li class="nav-item {{ Request::is('admin/produk*') ? 'active' : '' }}">
+        <a class="nav-link" href="/admin/produk">
+            <i class="fa fa-industry"></i>
+            <span>Produk</span></a>
+    </li>
+
     <li
         class="nav-item {{ Request::is('admin/pejabat-administrasi*') || Request::is('admin/badan-permusyawaratan*') || Request::is('admin/dusun*') ? 'active' : '' }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
