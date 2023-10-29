@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\AccordingToincomeController;
 use App\Http\Controllers\Admin\AccordingToworkController;
 use App\Http\Controllers\Admin\AdministrativeOfficialsController;
 use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\CallNumberController;
 use App\Http\Controllers\Admin\ConsultativeBodyController;
 use App\Http\Controllers\Admin\HalmetController;
 use App\Http\Controllers\Admin\HalmetOfficeController;
@@ -125,6 +126,9 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('/admin/privacy-policy', PrivacyPolicyController::class);
     Route::get('/admin/privacy-policy/delete/{id}', [PrivacyPolicyController::class, 'destroy']);
+
+    Route::resource('/admin/nomor-kontak', CallNumberController::class);
+    Route::get('/admin/nomor-kontak/delete/{id}', [CallNumberController::class, 'destroy']);
 });
 // AKHIR ADMIN
 
