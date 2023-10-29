@@ -36,29 +36,47 @@
         </div>
         @endif
 
-        @if (!$pejabatAdmis->count())
-        <div class="no-data-pemerintahan">
-            <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
-            <h5>Tidak ada data!</h5>
-        </div>
-        @else
         <div class="row pejabat-desa-2 align-content-center">
-            @foreach ($pejabatAdmis->skip(1)->take(2) as $pejabat2)
+            @if (!$sekretaris)
+            <div class="col-lg-4 col-md-6 mx-auto">
+                <div class="no-data-pemerintahan">
+                    <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+                    <h5>Tidak ada data!</h5>
+                </div>
+            </div>
+            @else
             <div class="col-lg-4 col-md-6 mx-auto">
                 <div class="card card-pejabat">
-                    <div class="img2"><img src="{{ asset('storage/' . $pejabat2->image) }}" alt="..."></div>
+                    <div class="img2"><img src="{{ asset('storage/' . $sekretaris->image) }}" alt="..."></div>
                     <div class="content-text">
-                        <h2 class="card-title text-center">{{ Str::limit($pejabat2->name, 80, '...') }}</h1>
-                            <h2 class="card-subtitle">{{ Str::limit($pejabat2->position, 80, '...') }}</h2>
+                        <h2 class="card-title text-center">{{ Str::limit($sekretaris->name, 80, '...') }}</h1>
+                            <h2 class="card-subtitle">{{ Str::limit($sekretaris->position, 80, '...') }}</h2>
                     </div>
                 </div>
             </div>
-            @endforeach
+            @endif
+            @if (!$kasiPemerintah)
+            <div class="col-lg-4 col-md-6 mx-auto">
+                <div class="no-data-pemerintahan">
+                    <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+                    <h5>Tidak ada data!</h5>
+                </div>
+            </div>
+            @else
+            <div class="col-lg-4 col-md-6 mx-auto">
+                <div class="card card-pejabat">
+                    <div class="img2"><img src="{{ asset('storage/' . $kasiPemerintah->image) }}" alt="..."></div>
+                    <div class="content-text">
+                        <h2 class="card-title text-center">{{ Str::limit($kasiPemerintah->name, 80, '...') }}</h1>
+                            <h2 class="card-subtitle">{{ Str::limit($kasiPemerintah->position, 80, '...') }}</h2>
+                    </div>
+                </div>
+            </div>
+            @endif
         </div>
-        @endif
 
         <div class="row pejabat-desa-3 align-content-center">
-            @foreach ($pejabatAdmis->skip(3) as $pejabat3)
+            @foreach ($pejabatAdmis as $pejabat3)
             <div class="col-lg-4 col-md-6 mx-auto">
                 <div class="card card-pejabat">
                     <div class="img2"><img src="{{ asset('storage/' . $pejabat3->image) }}" alt="..."></div>

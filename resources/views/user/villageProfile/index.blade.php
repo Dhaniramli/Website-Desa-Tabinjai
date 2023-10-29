@@ -8,8 +8,7 @@
             <div class="col-lg-7">
                 <h1><span class="utama">Desa Tabbinjai</span>, Sebuah Desa Yang Terletak Di Sulawesi Selatan, Kab.
                     Sinjai</h1>
-                <p>Lorem ipsum dolor sit amet consectetur. Cursus quam dictum tellus sit faucibus. Tristique aliquet et
-                    urna mattis condimentum elementum elit. Nec tellus bibendum ac pellentesque massa.</p>
+                <p>Dengan hadirnya website ini, masyarakat diharapkan bisa untuk: Mengakses informasi tentang desa Tabbinjai</p>
             </div>
         </div>
         <div class="tombol">
