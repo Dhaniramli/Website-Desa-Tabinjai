@@ -1,6 +1,14 @@
 @extends('user.layouts.main')
 
 @section('content')
+@if (!$news->count())
+<div class="container no-data-1">
+    <div class="no-data-2">
+        <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+        <h5>Tidak ada data!</h5>
+    </div>
+</div>
+@else
 <div class="container berita-all-1">
     <h1 class="text-center">Berita</h1>
 
@@ -36,4 +44,6 @@
         @endforeach
     </div>
 </div>
+@endif
+
 @endsection

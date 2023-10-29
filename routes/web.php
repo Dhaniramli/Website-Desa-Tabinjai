@@ -36,16 +36,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('index');
-// });
-Route::get('/home', function () {
-    return view('index');
-});
-Route::get('/profil_desa', function () {
-    return view('profil_desa');
-});
-
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/profil-desa', [VillageProfileController::class, 'index'])->name('profilDesa');
 Route::get('/profil-desa/sejarah', [VillageProfileController::class, 'showSejarah'])->name('showSejarah');
