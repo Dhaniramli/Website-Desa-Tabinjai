@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Websita Desa Tabbinjai</title>
+    <title>Website Desa Tabbinjai</title>
     @include('user.layouts.partials.css')
 </head>
 
@@ -16,6 +16,9 @@
     @include('user.layouts.partials.footer')
 
     @include('user.layouts.partials.js')
+
+    @include('user.layouts.partials.termsOfservice')
+    @include('user.layouts.partials.privacyPolicy')
 </body>
 
 </html>

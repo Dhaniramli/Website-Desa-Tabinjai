@@ -36,6 +36,14 @@ footer .bawah-dua {
     justify-content: flex-end;
 }
 
+footer .bawah-dua button{
+    font-weight: 200;
+    font-size: 14px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
 footer .bawah-dua a {
     font-weight: 200;
     font-size: 14px;
