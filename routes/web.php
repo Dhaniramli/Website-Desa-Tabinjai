@@ -12,6 +12,7 @@ use App\Http\Controllers\Admin\HalmetController;
 use App\Http\Controllers\Admin\HalmetOfficeController;
 use App\Http\Controllers\Admin\HistoryController;
 use App\Http\Controllers\Admin\MissionController;
+use App\Http\Controllers\Admin\PrivacyPolicyController;
 use App\Http\Controllers\Admin\TermsOfserviceController;
 use App\Http\Controllers\Admin\TotalPopulationController;
 use App\Http\Controllers\Admin\TouristAttractionController as AdminTouristAttractionController;
@@ -121,6 +122,9 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('/admin/terms-of-service', TermsOfserviceController::class);
     Route::get('/admin/terms-of-service/delete/{id}', [TermsOfserviceController::class, 'destroy']);
+
+    Route::resource('/admin/privacy-policy', PrivacyPolicyController::class);
+    Route::get('/admin/privacy-policy/delete/{id}', [PrivacyPolicyController::class, 'destroy']);
 });
 // AKHIR ADMIN
 
