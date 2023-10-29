@@ -10,7 +10,7 @@
                 @if ($termsOfservice)
                 {!! $termsOfservice->body !!}
                 @else
-                    <h1 class="text-center">Tidak Ada Data!</h1>
+                    <p class="text-center">Tidak Ada Data!</p>
                 @endif
             </div>
             <div class="modal-footer">
