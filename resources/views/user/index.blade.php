@@ -93,6 +93,36 @@
     </div>
 </div>
 
+<div class="container produk-desa-athome">
+    <div class="row">
+        <div class="col-lg-6 produk-desa-athome-1">
+            <h1>Produk Desa</h1>
+            <p>Produk Desa Tabbinjai di identifikasi ke dalam beberapa bidang produksi, seperti produksi Gula Aren, dan
+                Wisata Menarik di Desa Tabbinjai</p>
+        </div>
+        <div class="col-lg-6">
+            <div class="row produk-desa-athome-2">
+                <div class="col-6">
+                    <a href="/produk-pangan" style="text-decoration: none;">
+                        <div class="container tombol">
+                            <img src="{{ asset('images/salad.png') }}" alt="">
+                            <h2>Produk Pangan</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="/produk-wisata" style="text-decoration: none;">
+                        <div class="container tombol">
+                            <img src="{{ asset('images/location.png') }}" alt="">
+                            <h2>Produk Wisata</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container berita">
     <h1 class="text-center">Berita</h1>
 

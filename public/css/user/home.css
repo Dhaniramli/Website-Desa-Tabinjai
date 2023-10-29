@@ -418,3 +418,83 @@
 }
 
 /* AKHIR BERITA */
+
+/* PRODUK DESA */
+.produk-desa-athome {
+    margin-top: 100px;
+    min-height: 27vh;
+}
+
+.produk-desa-athome h1 {
+    color: #009D4C;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.produk-desa-athome p {
+    margin-top: 20px;
+    color: #495057;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.produk-desa-athome .tombol img {
+    width: 70px;
+    height: 70px;
+}
+
+.produk-desa-athome .tombol h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.produk-desa-athome .tombol {
+    background-color: #04C26D;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.produk-desa-athome-1 {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh; */
+}
+
+@media (max-width: 991px) {
+    .produk-desa-athome-2{
+        margin-top: 20px;
+    }
+    .produk-desa-athome-1 h1 {
+        text-align: center;
+    }
+
+    .produk-desa-athome-1 p {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .produk-desa-athome-1 h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .produk-desa-athome-1 p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .produk-desa-athome .tombol h2 {
+        font-size: 15px;
+    }
+}
+
+/* AKHIR PRODUK DESA */
