@@ -41,12 +41,6 @@
             <i class="fa fa-history"></i>
             <span>Sejarah</span></a>
     </li>
-{{-- 
-    <li class="nav-item {{ Request::is('admin/produk*') ? 'active' : '' }}">
-        <a class="nav-link" href="/admin/produk">
-            <i class="fa fa-industry"></i>
-            <span>Produk</span></a>
-    </li> --}}
 
     <li
         class="nav-item {{ Request::is('admin/produk-pangan*') || Request::is('admin/produk-wisata*') ? 'active' : '' }}">
@@ -78,8 +72,9 @@
                     href="/admin/pejabat-administrasi">Pejabat Administrasi</a>
                 <a class="collapse-item {{ Request::is('admin/badan-permusyawaratan*') ? 'active' : ''}}"
                     href="/admin/badan-permusyawaratan">BPD</a>
-                <a class="collapse-item {{ Request::is('admin/dusun*') ? 'active' : ''}}" href="/admin/dusun">Pejabat
-                    Dusun</a>
+                {{-- <a class="collapse-item {{ Request::is('admin/dusun*') ? 'active' : ''}}"
+                href="/admin/dusun">Pejabat
+                Dusun</a> --}}
             </div>
         </div>
     </li>
@@ -93,11 +88,16 @@
         </a>
         <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item {{ Request::is('admin/jenis-kelamin*') ? 'active' : ''}}" href="/admin/jenis-kelamin">Menurut Jenis Kelamin</a>
-                <a class="collapse-item {{ Request::is('admin/umur*') ? 'active' : ''}}" href="/admin/umur">Menurut Umur</a>
-                <a class="collapse-item {{ Request::is('admin/pendidikan*') ? 'active' : ''}}" href="/admin/pendidikan">Menurut Pendidikan</a>
-                <a class="collapse-item {{ Request::is('admin/pekerjaan*') ? 'active' : ''}}" href="/admin/pekerjaan">Menurut Pekerjaan</a>
-                <a class="collapse-item {{ Request::is('admin/penghasilan*') ? 'active' : ''}}" href="/admin/penghasilan">Menurut Penghasilan</a>
+                <a class="collapse-item {{ Request::is('admin/jenis-kelamin*') ? 'active' : ''}}"
+                    href="/admin/jenis-kelamin">Menurut Jenis Kelamin</a>
+                <a class="collapse-item {{ Request::is('admin/umur*') ? 'active' : ''}}" href="/admin/umur">Menurut
+                    Umur</a>
+                <a class="collapse-item {{ Request::is('admin/pendidikan*') ? 'active' : ''}}"
+                    href="/admin/pendidikan">Menurut Pendidikan</a>
+                <a class="collapse-item {{ Request::is('admin/pekerjaan*') ? 'active' : ''}}"
+                    href="/admin/pekerjaan">Menurut Pekerjaan</a>
+                <a class="collapse-item {{ Request::is('admin/penghasilan*') ? 'active' : ''}}"
+                    href="/admin/penghasilan">Menurut Penghasilan</a>
             </div>
         </div>
     </li>

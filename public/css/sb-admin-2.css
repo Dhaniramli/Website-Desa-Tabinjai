@@ -12609,3 +12609,13 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
     width: 100%;
 }
+a.logout-button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+a.logout-button:active {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
