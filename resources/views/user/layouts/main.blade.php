@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Desa Tabbinjai</title>
+    <title>Websita Desa Tabbinjai</title>
     @include('user.layouts.partials.css')
 </head>
 

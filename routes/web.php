@@ -12,6 +12,7 @@ use App\Http\Controllers\Admin\HalmetController;
 use App\Http\Controllers\Admin\HalmetOfficeController;
 use App\Http\Controllers\Admin\HistoryController;
 use App\Http\Controllers\Admin\MissionController;
+use App\Http\Controllers\Admin\TermsOfserviceController;
 use App\Http\Controllers\Admin\TotalPopulationController;
 use App\Http\Controllers\Admin\TouristAttractionController as AdminTouristAttractionController;
 use App\Http\Controllers\Admin\VillageProductsController as AdminVillageProductsController;
@@ -117,6 +118,9 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('/admin/penghasilan', AccordingToincomeController::class);
     Route::get('/admin/penghasilan/hapus/{id}', [AccordingToincomeController::class, 'destroy']);
+
+    Route::resource('/admin/terms-of-service', TermsOfserviceController::class);
+    Route::get('/admin/terms-of-service/delete/{id}', [TermsOfserviceController::class, 'destroy']);
 });
 // AKHIR ADMIN
 

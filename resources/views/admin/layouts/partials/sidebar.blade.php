@@ -102,6 +102,25 @@
         </div>
     </li>
 
+    <li
+        class="nav-item {{ Request::is('admin/nomor-kontak*') || Request::is('admin/terms-of-service*') || Request::is('admin/privacy-policy*') ? 'active' : '' }}">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
+            aria-controls="collapseFive">
+            <i class="fa fa-american-sign-language-interpreting"></i>
+            <span>Lainnya</span>
+        </a>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item {{ Request::is('admin/nomor-kontak*') ? 'active' : ''}}"
+                    href="/admin/nomor-kontak">Nomor Kontak</a>
+                <a class="collapse-item {{ Request::is('admin/terms-of-service*') ? 'active' : ''}}"
+                    href="/admin/terms-of-service">Terms of Service</a>
+                <a class="collapse-item {{ Request::is('admin/privacy-policy*') ? 'active' : ''}}"
+                    href="/admin/privacy-policy">Privacy Policy</a>
+            </div>
+        </div>
+    </li>
+
     <hr class="sidebar-divider d-none d-md-block">
 
     <div class="text-center d-none d-md-inline">
