@@ -3,14 +3,14 @@
 @section('content')
 <div class="container-fluid">
 
-    <h1 class="h3 mb-2 text-gray-800 text-center">Produk Desa Tabbinjai</h1>
+    <h1 class="h3 mb-2 text-gray-800 text-center">Produk Pangan</h1>
     @if (session()->has('success'))
     @include('admin.layouts.partials.alertSuccess')
     @endif
 
     <div class="card shadow mb-4">
         <div class="card-header">
-            <a href="/admin/produk/create" class="btn btn-success btn-icon-split float-right">
+            <a href="/admin/produk-pangan/create" class="btn btn-success btn-icon-split float-right">
                 <span class="text">Tambah Produk</span>
             </a>
         </div>
@@ -35,8 +35,8 @@
                             <td class="align-middle text-center"><img src="{{ asset('storage/' . $item->image) }}"
                                     alt="" style="width: 200px;"></td>
                             <td class="align-middle text-center">
-                                <a href="/admin/produk/{{ $item->id }}/edit" class="btn btn-warning">Edit</a>
-                                <a id="deleteButton" href="/admin/produk/delete/{{ $item->id }}"
+                                <a href="/admin/produk-pangan/{{ $item->id }}/edit" class="btn btn-warning">Edit</a>
+                                <a id="deleteButton" href="/admin/produk-pangan/delete/{{ $item->id }}"
                                     class="btn btn-danger">Hapus</a>
                             </td>
                         </tr>

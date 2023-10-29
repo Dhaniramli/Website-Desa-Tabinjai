@@ -7,7 +7,7 @@
         <div class="col-lg-8 mx-auto my-auto">
 
             <div class="card shadow mb-4">
-                <form method="POST" action="/admin/produk" enctype="multipart/form-data">
+                <form method="POST" action="/admin/produk-pangan" enctype="multipart/form-data">
                     <div class="card-body">
                         @csrf
 

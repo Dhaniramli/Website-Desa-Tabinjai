@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-lg-8 mx-auto my-auto">
             <div class="card shadow mb-4">
-                <form method="POST" action="/admin/produk/{{ $item->id }}" enctype="multipart/form-data">
+                <form method="POST" action="/admin/produk-pangan/{{ $item->id }}" enctype="multipart/form-data">
                     <div class="card-body">
                         @csrf
                         @method('put')

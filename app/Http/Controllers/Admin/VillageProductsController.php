@@ -45,7 +45,7 @@ class VillageProductsController extends Controller
 
         VillageProducts::create($validatedData);
 
-        return redirect('/admin/produk')->with('success', 'Berhasil ditambahkan!');
+        return redirect('/admin/produk-pangan')->with('success', 'Berhasil ditambahkan!');
     }
 
     /**
@@ -88,7 +88,7 @@ class VillageProductsController extends Controller
 
         VillageProducts::where('id', $id)->update($validatedData);
 
-        return redirect('/admin/produk')->with('success', 'Produk diperbarui!');
+        return redirect('/admin/produk-pangan')->with('success', 'Produk diperbarui!');
     }
 
     /**
@@ -97,6 +97,6 @@ class VillageProductsController extends Controller
     public function destroy(string $id)
     {
         VillageProducts::destroy($id);
-        return redirect('/admin/produk');
+        return redirect('/admin/produk-pangan');
     }
 }
