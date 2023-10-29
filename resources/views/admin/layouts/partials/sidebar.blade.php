@@ -41,11 +41,28 @@
             <i class="fa fa-history"></i>
             <span>Sejarah</span></a>
     </li>
-
+{{-- 
     <li class="nav-item {{ Request::is('admin/produk*') ? 'active' : '' }}">
         <a class="nav-link" href="/admin/produk">
             <i class="fa fa-industry"></i>
             <span>Produk</span></a>
+    </li> --}}
+
+    <li
+        class="nav-item {{ Request::is('admin/produk-pangan*') || Request::is('admin/produk-wisata*') ? 'active' : '' }}">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+            aria-controls="collapseFour">
+            <i class="fa fa-industry"></i>
+            <span>Produk</span>
+        </a>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item {{ Request::is('admin/produk-pangan*') ? 'active' : ''}}"
+                    href="/admin/produk-pangan">Pangan</a>
+                <a class="collapse-item {{ Request::is('admin/produk-wisata*') ? 'active' : ''}}"
+                    href="/admin/produk-wisata">Wisata</a>
+            </div>
+        </div>
     </li>
 
     <li

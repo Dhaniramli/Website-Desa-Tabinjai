@@ -13,6 +13,7 @@ use App\Http\Controllers\Admin\HalmetOfficeController;
 use App\Http\Controllers\Admin\HistoryController;
 use App\Http\Controllers\Admin\MissionController;
 use App\Http\Controllers\Admin\TotalPopulationController;
+use App\Http\Controllers\Admin\TouristAttractionController as AdminTouristAttractionController;
 use App\Http\Controllers\Admin\VillageProductsController as AdminVillageProductsController;
 use App\Http\Controllers\Admin\VissionController;
 use App\Http\Controllers\User\GovernmentController;
@@ -74,8 +75,11 @@ Route::get('/admin/berita/hapus/{slug}', [BlogController::class, 'destroy']);
 Route::get('/admin/berita/show/{slug}', [BlogController::class, 'show']);
 Route::get('/admin/berita/checkSlug', [BlogController::class, 'checkSlug']);
 
-Route::resource('/admin/produk', AdminVillageProductsController::class);
-Route::get('/admin/produk/delete/{id}', [AdminVillageProductsController::class, 'destroy']);
+Route::resource('/admin/produk-pangan', AdminVillageProductsController::class);
+Route::get('/admin/produk-pangan/delete/{id}', [AdminVillageProductsController::class, 'destroy']);
+
+Route::resource('/admin/produk-wisata', AdminTouristAttractionController::class);
+Route::get('/admin/produk-wisata/delete/{id}', [AdminTouristAttractionController::class, 'destroy']);
 
 Route::resource('/admin/sejarah', HistoryController::class);
 Route::get('/admin/sejarah/delete/{id}', [HistoryController::class, 'destroy']);
