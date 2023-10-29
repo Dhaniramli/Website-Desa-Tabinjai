@@ -40,8 +40,10 @@
 }
 
 .navbar .dropdown .dropdown-menu {
+    /* background-color: #bed1c7; */
+    border: 2px solid #009D4C;
     padding: 0px;
-    border-radius: 0px;
+    border-radius: 10px;
 }
 
 

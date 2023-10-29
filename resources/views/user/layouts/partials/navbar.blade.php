@@ -22,17 +22,12 @@
                         href="{{ Route('index-pemerintahan') }}">Pemerintahan</a>
                 </li>
 
-                {{-- <li class="nav-item">
-                    <a class="nav-link {{ Request::is('produk-desa*') ? 'active' : ''}}"
-                        href="{{ Route('index-produkDesa') }}">Produk Desa</a>
-                </li> --}}
-
                 <li class="nav-item dropdown">
                     <a class="nav-link {{ Request::is('produk-pangan*') || Request::is('produk-wisata*')  ? 'active' : ''}}" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Produk Desa
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu rounded">
                         <li><a class="dropdown-item {{ Request::is('produk-pangan*')  ? 'active' : ''}}" href="{{ Route('index-produkDesa') }}">Produk Pangan</a></li>
                         <li><a class="dropdown-item {{ Request::is('produk-wisata*')  ? 'active' : ''}}" href="{{ Route('index-wisata') }}">Produk Wisata</a></li>
                     </ul>
