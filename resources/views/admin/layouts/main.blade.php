@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Desa Tabinjai | Admin</title>
+    <title>Website Desa Tabinjai | Admin</title>
 
     @include('admin.layouts.partials.css')
 
