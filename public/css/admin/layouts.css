@@ -1,5 +1,26 @@
 /* SIDEBAR */
-.sidebar.bg-custom{
+.sidebar.bg-custom {
     background-color: #009D4C;
 }
+
 /* AKHIR SIDEBAR */
+
+/* DASHBOARD */
+.dashboard-2 h3 {
+    color: #009D4C;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.dashboard-2 h6 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.dashboard-2 .desanya {
+    color: #009D4C;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+/* AKHIR DASHBOARD */
