@@ -4,13 +4,13 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-6 home-1 order-lg-1 order-1">
-            <h1>Selamat Datang Di Website <span class="green-text">Desa Tabbinjai</span></h1>
-            <p><span class="bold-text">Website Desa Tabbinjai</span> adalah usaha menggambarkan secara utuh tentang
+            <h1 data-aos="zoom-in-right" data-aos-offset="300">Selamat Datang Di Website <span class="green-text">Desa Tabbinjai</span></h1>
+            <p data-aos="zoom-in-right" data-aos-easing="ease-in-sine"><span class="bold-text">Website Desa Tabbinjai</span> adalah usaha menggambarkan secara utuh tentang
                 kondisi Desa. Data-data yang disusun diambil dari semua data yang tersedia dan bisa didapatkan.</p>
         </div>
         <div class="col-lg-6 home-2 order-lg-2 order-2">
             <div class="image-home-2">
-                <img src="{{ asset('images/Group 114.png') }}" alt="">
+                <img data-aos="zoom-in" src="{{ asset('images/Group 114.png') }}" alt="">
             </div>
         </div>
     </div>
@@ -22,19 +22,19 @@
         <div class="col-lg-6 home-3">
             <div class="logo-x-visi">
                 <div class="visi-logo">
-                    <img src="{{ asset('images/Frame 40.png') }}" alt="">
+                    <img data-aos="zoom-in" src="{{ asset('images/Frame 40.png') }}" alt="">
                 </div>
                 <div class="visi-title">
-                    <h1>Visi</h1>
+                    <h1 data-aos="flip-up">Visi</h1>
                 </div>
             </div>
             @if (!$visi)
             <div class="no-data-pemerintahan">
-                <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
-                <h5>Tidak ada data!</h5>
+                <img data-aos="zoom-in" src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+                <h5 data-aos="flip-up">Tidak ada data!</h5>
             </div>
             @else
-            <div class="visi-content">
+            <div data-aos="flip-up" class="visi-content">
                 {!! $visi->body !!}
             </div>
             @endif
@@ -42,19 +42,19 @@
         <div class="col-lg-6 home-4">
             <div class="logo-x-misi">
                 <div class="misi-logo">
-                    <img src="{{ asset('images/Frame 39.png') }}" alt="">
+                    <img data-aos="zoom-in" src="{{ asset('images/Frame 39.png') }}" alt="">
                 </div>
                 <div class="misi-title">
-                    <h1>Misi</h1>
+                    <h1 data-aos="flip-up">Misi</h1>
                 </div>
             </div>
             @if (!$misi)
             <div class="no-data-pemerintahan">
-                <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
-                <h5>Tidak ada data!</h5>
+                <img data-aos="zoom-in" src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+                <h5 data-aos="flip-up">Tidak ada data!</h5>
             </div>
             @else
-            <div class="misi-content">
+            <div data-aos="flip-up" class="misi-content">
                 {!! $misi->body !!}
             </div>
             @endif
@@ -65,12 +65,12 @@
 {{-- PEJABAT DESA --}}
 <div class="container-fluid" style="background-image: url('{{ asset('images/bg.png') }}'); background-size: cover;">
     <div class="container pejabat-desa">
-        <h1 class="text-center">Pejabat Desa</h1>
+        <h1 data-aos="flip-up" class="text-center">Pejabat Desa</h1>
 
         @if (!$pejabatAdministrasi->count())
         <div class="no-data-pemerintahan">
-            <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
-            <h5>Tidak ada data!</h5>
+            <img data-aos="zoom-in" src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+            <h5 data-aos="flip-up">Tidak ada data!</h5>
         </div>
         @else
         <div class="carousel-main carousel-galeri"
@@ -78,7 +78,7 @@
             @foreach ($pejabatAdministrasi as $pejabat)
             <div class="carousel-cell carousel-inner-gallery">
                 <div class="overlay">
-                    <div class="card">
+                    <div data-aos="flip-up" class="card">
                         <div class="img2"><img src="{{ asset('storage/' . $pejabat->image) }}" alt="..."></div>
                         <div class="content-text">
                             <h2 class="card-title text-center">{{ Str::limit($pejabat->name, 80, '...') }}</h1>
@@ -96,14 +96,14 @@
 <div class="container produk-desa-athome">
     <div class="row">
         <div class="col-lg-6 produk-desa-athome-1">
-            <h1>Produk Desa</h1>
-            <p>Produk Desa Tabbinjai di identifikasi ke dalam beberapa bidang produksi, seperti produksi Gula Aren, dan
+            <h1 data-aos="flip-up">Produk Desa</h1>
+            <p data-aos="flip-up">Produk Desa Tabbinjai di identifikasi ke dalam beberapa bidang produksi, seperti produksi Gula Aren, dan
                 Wisata Menarik di Desa Tabbinjai</p>
         </div>
         <div class="col-lg-6">
             <div class="row produk-desa-athome-2">
                 <div class="col-6">
-                    <a href="/produk-pangan" style="text-decoration: none;">
+                    <a data-aos="zoom-in" href="/produk-pangan" style="text-decoration: none;">
                         <div class="container tombol">
                             <img src="{{ asset('images/salad.png') }}" alt="">
                             <h2>Produk Pangan</h2>
@@ -111,7 +111,7 @@
                     </a>
                 </div>
                 <div class="col-6">
-                    <a href="/produk-wisata" style="text-decoration: none;">
+                    <a data-aos="zoom-in" href="/produk-wisata" style="text-decoration: none;">
                         <div class="container tombol">
                             <img src="{{ asset('images/location.png') }}" alt="">
                             <h2>Produk Wisata</h2>
@@ -124,17 +124,17 @@
 </div>
 
 <div class="container berita">
-    <h1 class="text-center">Berita</h1>
+    <h1 data-aos="flip-up" class="text-center">Berita</h1>
 
     @if (!$beritas->count())
     <div class="no-data-pemerintahan">
-        <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
-        <h5>Tidak ada data!</h5>
+        <img data-aos="zoom-in" src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+        <h5 data-aos="flip-up">Tidak ada data!</h5>
     </div>
     @else
     <div class="row">
         <div class="col-lg-6">
-            <div class="card berita-1">
+            <div data-aos="zoom-in" class="card berita-1">
                 <div class="card-img">
                     <img src="{{ asset('storage/' . $beritas[0]->image) }}" alt="...">
                 </div>
@@ -165,7 +165,7 @@
             <div class="row">
                 @foreach ($beritas->skip(1) as $berita)
                 <div class="col-lg-6">
-                    <div class="card berita-1">
+                    <div data-aos="zoom-in" class="card berita-1">
                         <div class="card-subimg">
                             <img src="{{ asset('storage/' . $berita->image) }}" alt="...">
                         </div>

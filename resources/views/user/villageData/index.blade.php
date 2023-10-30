@@ -4,7 +4,7 @@
 <div class="container data-desa-1">
     <div class="row">
         <div class="col-lg-3 col-md-3">
-            <select class="form-select" size="5" aria-label="Multiple select example">
+            <select data-aos="zoom-in" class="form-select" size="5" aria-label="Multiple select example">
                 <option value="1" selected>Jenis Kelamin</option>
                 <option value="2">Kelompok Umur</option>
                 <option value="3">Pendidikan</option>
@@ -13,7 +13,7 @@
             </select>
         </div>
         <div class="col-lg-9 col-md-9">
-            <div class="card shadow content-data">
+            <div data-aos="zoom-in" class="card shadow content-data">
                 <h1 class="text-center">Demografi Penduduk</h1>
                 <div class="card border">
                     {{-- JENIS KELAMIN --}}

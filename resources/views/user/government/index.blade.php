@@ -6,7 +6,7 @@
     <div class="container pemerintahan-2">
         <div class="row">
             <div class="col-lg-9">
-                <h1>Jelajahi <span class="utama">Struktur Organisasi</span> Desa Tabbinjai dan Temukan Peran Setiap
+                <h1 data-aos="zoom-in-right" data-aos-offset="300">Jelajahi <span class="utama">Struktur Organisasi</span> Desa Tabbinjai dan Temukan Peran Setiap
                     Anggotanya</h1>
             </div>
         </div>
@@ -15,17 +15,17 @@
 
 <div class="container-fluid struktur-organisasi">
     <div class="container struktur-organisasi-2">
-        <h1>Struktur Organisasi</h1>
+        <h1 data-aos="flip-up">Struktur Organisasi</h1>
 
         @if (!$kepalaDesa)
         <div class="no-data-pemerintahan">
-            <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
-            <h5>Tidak ada data!</h5>
+            <img data-aos="zoom-in" src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+            <h5 data-aos="flip-up">Tidak ada data!</h5>
         </div>
         @else
         <div class="row pejabat-desa-1 align-content-center">
             <div class="col-lg-4 col-md-6 mx-auto">
-                <div class="card">
+                <div data-aos="zoom-in" class="card">
                     <div class="img2"><img src="{{ asset('storage/' . $kepalaDesa->image) }}" alt="..."></div>
                     <div class="content-text">
                         <h2 class="card-title text-center">{{ Str::limit($kepalaDesa->name, 80, '...') }}</h1>
@@ -40,13 +40,13 @@
             @if (!$sekretaris)
             <div class="col-lg-4 col-md-6 mx-auto">
                 <div class="no-data-pemerintahan">
-                    <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
-                    <h5>Tidak ada data!</h5>
+                    <img data-aos="zoom-in" src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+                    <h5 data-aos="flip-up">Tidak ada data!</h5>
                 </div>
             </div>
             @else
             <div class="col-lg-4 col-md-6 mx-auto">
-                <div class="card card-pejabat">
+                <div data-aos="zoom-in" class="card card-pejabat">
                     <div class="img2"><img src="{{ asset('storage/' . $sekretaris->image) }}" alt="..."></div>
                     <div class="content-text">
                         <h2 class="card-title text-center">{{ Str::limit($sekretaris->name, 80, '...') }}</h1>
@@ -58,13 +58,13 @@
             @if (!$kasiPemerintah)
             <div class="col-lg-4 col-md-6 mx-auto">
                 <div class="no-data-pemerintahan">
-                    <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
-                    <h5>Tidak ada data!</h5>
+                    <img data-aos="zoom-in" src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+                    <h5 data-aos="flip-up">Tidak ada data!</h5>
                 </div>
             </div>
             @else
             <div class="col-lg-4 col-md-6 mx-auto">
-                <div class="card card-pejabat">
+                <div data-aos="zoom-in" class="card card-pejabat">
                     <div class="img2"><img src="{{ asset('storage/' . $kasiPemerintah->image) }}" alt="..."></div>
                     <div class="content-text">
                         <h2 class="card-title text-center">{{ Str::limit($kasiPemerintah->name, 80, '...') }}</h1>
@@ -78,7 +78,7 @@
         <div class="row pejabat-desa-3 align-content-center">
             @foreach ($pejabatAdmis as $pejabat3)
             <div class="col-lg-4 col-md-6 mx-auto">
-                <div class="card card-pejabat">
+                <div data-aos="zoom-in" class="card card-pejabat">
                     <div class="img2"><img src="{{ asset('storage/' . $pejabat3->image) }}" alt="..."></div>
                     <div class="content-text">
                         <h2 class="card-title text-center">{{ Str::limit($pejabat3->name, 80, '...') }}</h1>
@@ -94,20 +94,20 @@
 {{-- PEJABAT BPD --}}
 <div class="container-fluid bpd">
     <div class="container bpd-2">
-        <h1 class="text-center">BPD</h1>
+        <h1 data-aos="flip-up" class="text-center">BPD</h1>
 
         @if (!$pejabatBpds->count())
         <div class="container no-data-pemerintahan">
             <div class="no-data-2">
-                <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
-                <h5>Tidak ada data!</h5>
+                <img data-aos="zoom-in" src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+                <h5 data-aos="flip-up">Tidak ada data!</h5>
             </div>
         </div>
         @else
         <div class="row bpd-3 align-content-center">
             @foreach ($pejabatBpds as $pejabat3)
             <div class="col-lg-4 col-md-6 mx-auto">
-                <div class="card card-pejabat">
+                <div data-aos="zoom-in" class="card card-pejabat">
                     <div class="img2"><img src="{{ asset('storage/' . $pejabat3->image) }}" alt="..."></div>
                     <div class="content-text">
                         <h2 class="card-title text-center">{{ Str::limit($pejabat3->name, 80, '...') }}</h1>

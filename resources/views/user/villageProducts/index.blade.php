@@ -4,18 +4,18 @@
 @if (!$produks->count())
 <div class="container no-data-1">
     <div class="no-data-2">
-        <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
-        <h5>Tidak ada data!</h5>
+        <img data-aos="zoom-in" src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+        <h5 data-aos="flip-up">Tidak ada data!</h5>
     </div>
 </div>
 @else
 <div class="container produk-desa-1">
-    <h1 class="text-center">Produk Pangan</h1>
+    <h1 data-aos="flip-up" class="text-center">Produk Pangan</h1>
 
     <div class="row produk-desa-2">
         @foreach ($produks as $item)
         <div class="col-lg-4 col-md-6">
-            <div class="card produk-desa-3">
+            <div data-aos="zoom-in" class="card produk-desa-3">
                 <div class="produk-img">
                     <img src="{{ asset('storage/' . $item->image) }}" class="card-img-top" alt="...">
                 </div>

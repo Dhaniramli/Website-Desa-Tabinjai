@@ -4,18 +4,18 @@
 @if (!$news->count())
 <div class="container no-data-1">
     <div class="no-data-2">
-        <img src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
-        <h5>Tidak ada data!</h5>
+        <img data-aos="zoom-in" src="{{ asset('images/noData.png') }}" alt="" width="200px" height="200px">
+        <h5 data-aos="zoom-in">Tidak ada data!</h5>
     </div>
 </div>
 @else
 <div class="container berita-all-1">
-    <h1 class="text-center">Berita</h1>
+    <h1 data-aos="zoom-in" class="text-center">Berita</h1>
 
     <div class="row berita-all-2">
         @foreach ($news as $item)
         <div class="col-lg-4 col-md-6 mt-3">
-            <div class="card berita-1">
+            <div data-aos="zoom-in" class="card berita-1">
                 <div class="card-img">
                     <img src="{{ asset('storage/' . $item->image) }}" alt="...">
                 </div>

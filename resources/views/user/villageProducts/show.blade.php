@@ -4,7 +4,7 @@
 <div class="container show-berita">
     <div class="row">
         <div class="col-lg-9 mx-auto my-auto">
-            <div class="card show-berita-1 border-0">
+            <div data-aos="zoom-in" class="card show-berita-1 border-0">
                 <div class="title-show-berita">
                     <h2>{{ $produk->title }}</h2>
                 </div>
