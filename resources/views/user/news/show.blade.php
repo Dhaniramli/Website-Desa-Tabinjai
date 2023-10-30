@@ -3,7 +3,7 @@
 @section('content')
 <div class="container show-berita">
     <div class="row">
-        <div class="col-lg-9">
+        <div class="col-lg-9 mx-auto my-auto">
             <div class="card show-berita-1 border-0">
                 <div class="title-show-berita">
                     <h2>{{ $berita->title }}</h2>
