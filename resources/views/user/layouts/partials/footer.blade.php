@@ -20,8 +20,7 @@
             </div>
             <div class="row" style="margin-top: 20px;">
                 <div class="col-lg-4 col-md-4 bawah-satu">
-                    <a style="text-decoration: none;"
-                        href="https://www.instagram.com/hmjsi.uinam/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==">
+                    <a href="https://www.instagram.com/hmjsi.uinam/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==">
                         <h5>© 2023 HMJ-SI. All Rights Reserved.</h5>
                     </a>
                 </div>

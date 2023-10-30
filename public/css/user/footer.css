@@ -30,6 +30,17 @@ footer .btn-kontak:hover{
     color: white;
 }
 
+footer .bawah-satu a{
+    text-decoration: none;
+}
+footer .bawah-satu a:hover{
+    text-decoration: underline;
+}
+
+footer .bawah-dua a:hover{
+    text-decoration: underline;
+}
+
 footer .bawah-dua {
     text-align: right;
     display: flex;
