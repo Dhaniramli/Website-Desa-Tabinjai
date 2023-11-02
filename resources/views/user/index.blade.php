@@ -34,7 +34,7 @@
                 <h5 data-aos="flip-up">Tidak ada data!</h5>
             </div>
             @else
-            <div data-aos="flip-up" class="visi-content">
+            <div data-aos="flip-up" class="visi-content" style="text-align: justify">
                 {!! $visi->body !!}
             </div>
             @endif
@@ -54,7 +54,7 @@
                 <h5 data-aos="flip-up">Tidak ada data!</h5>
             </div>
             @else
-            <div data-aos="flip-up" class="misi-content">
+            <div data-aos="flip-up" class="misi-content" style="text-align: justify">
                 {!! $misi->body !!}
             </div>
             @endif

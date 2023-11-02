@@ -32,7 +32,9 @@
     @else
     <div class="container sejarah-2">
         <div data-aos="zoom-in" class="card shadow card-sejarah">
-            {!! substr($sejarah->body, 0, 1048) !!}
+            <div class="text-justify" style="text-align: justify">
+                {!! substr($sejarah->body, 0, 1048) !!}
+            </div>
             <a href="/profil-desa/sejarah" class="selengkapnya">Lihat selengkapnya...</a>
         </div>
     </div>
@@ -57,7 +59,7 @@
                 <h5 data-aos="flip-up">Tidak ada data!</h5>
             </div>
             @else
-            <div data-aos="flip-up" class="visi-content">
+            <div data-aos="flip-up" class="visi-content" style="text-align: justify">
                 {!! $visi->body !!}
             </div>
             @endif
@@ -77,7 +79,7 @@
                 <h5 data-aos="flip-up">Tidak ada data!</h5>
             </div>
             @else
-            <div data-aos="flip-up" class="misi-content">
+            <div data-aos="flip-up" class="misi-content" style="text-align: justify">
                 {!! $misi->body !!}
             </div>
             @endif

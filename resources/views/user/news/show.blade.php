@@ -21,8 +21,8 @@
                 <div class="show-img">
                     <img src="{{ asset('storage/' . $berita->image) }}" alt="...">
                 </div>
-                <div class="card-body p-2">
-                    <p class="card-text">{!! $berita->body !!}</p>
+                <div class="card-body p-2" style="text-align: justify">
+                    <p class="card-text" >{!! $berita->body !!}</p>
                 </div>
             </div>
         </div>

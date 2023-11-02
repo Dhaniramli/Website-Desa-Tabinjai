@@ -19,7 +19,7 @@
                 <div class="show-img">
                     <img src="{{ asset('storage/' . $tours->image) }}" alt="...">
                 </div>
-                <div class="card-body p-2">
+                <div class="card-body p-2" style="text-align: justify">
                     <p class="card-text">{!! $tours->body !!}</p>
                 </div>
             </div>

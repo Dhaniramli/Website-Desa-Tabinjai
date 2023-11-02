@@ -5,7 +5,9 @@
     <h1 class="text-center">Sejarah Desa Tabbinjai</h1>
 
     <div class="card card-show-sejarah">
-        {!! $sejarah->body !!}
+        <div class="text-justify" style="text-align: justify">
+            {!! $sejarah->body !!}
+        </div>
     </div>
 </div>
 @endsection
